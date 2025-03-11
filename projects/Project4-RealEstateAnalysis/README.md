@@ -1,5 +1,7 @@
 UAE Real Estate
-Source - UAE Real Estate 2024 Dataset	
+
+Source - UAE Real Estate 2024 Dataset	/n
+
 Questions
 1. When time during the day do they add listings – when to check listings - done
 2. When during the week do they add listings – when to check listings - done
@@ -9,6 +11,8 @@ Questions
 6. How does price vary by apartment size and bedrooms/bathrooms - done
 7. Which city has the highest and lowest apartment prices - done
 8. Whats the distribution of total apartments across different cities in UAE - done
+
+
 Graphs
 1. Hour vs no of listings - done
 2. Day of week vs no of listings - done
@@ -16,6 +20,8 @@ Graphs
 4. Avg price vs area(buckets) - done
 5. Scatter plot – size, price, bedrooms/bathrooms - done
 6. Filled map – city vs total apt - done
+
+
 Cards
 1. Characteristic Avg Bathrooms - done
   a. Avg bathrooms
@@ -25,6 +31,7 @@ Cards
   e. %furnished
   f. % verified
   g. Lowest/highest priced city - done
+/n
 Notes
 1. Apartment 
    a. Studio – studio
