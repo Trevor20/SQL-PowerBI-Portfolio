@@ -68,3 +68,33 @@ The final Dataset contains 5 tables
 | Used_Discount | Whether Customer used discount(Yes/No) |
 | Discount_Amt  | Discount amount                        |
 | Final_Sales   | Net Sales                              |
+
+## 🔍 Key Business Questions Answered
+
+1️. What are the top 5 best-selling products?
+2. How do monthly sales trends change over time?
+3. Which stores generate the highest revenue?
+4. What is the impact of discounts on net sales?
+5. How does customer gender influence discount usage?
+6. Which stores have the most profitable managers?
+7. What is the customer age distribution of sales?
+8. How do gross profit and discounts correlate?
+9. Which cities contribute the most to sales volume?
+10. How does product profitability vary across locations?
+
+## ➡️ Project Approach
+
+### 1. Extract, Transform, Load using MySQL
+1. fijwf
+2. fwfw
+
+### 2. Data Visualatization Using Power BI
+1. iji
+2. dddq
+
+## 🏆 Final Insights
+- u
+- uh
+- ddd
+
+
