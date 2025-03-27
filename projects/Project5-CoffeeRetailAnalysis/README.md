@@ -17,3 +17,49 @@ The dateset in this project contains sales information of a coffe retail store i
 
 ## 📁 Database
 
+To facilitate data management and analysis, a database on MySQL was created to store the dataset. MySQL provdies a robust method to organize and manipulate data. A database schema was created to improve organization and efficiency of queries. The structure allows easy integration with tools like Power BI for visualsation.
+
+## 📂 Database Structure
+
+The final Dataset contains 5 tables
+
+### 1. City_Location                
+| Column  | Description    |
+|---------|----------------|
+| City_Id | Unique City ID |
+| City    | City Name      |
+| Lat     | Latitude       |
+| Long    | Longitude      | 
+
+### 2. Customer_Details
+| Column | Description        |
+|--------|--------------------|
+| Id     | Unique Customer ID |
+| Name   | Full Name          |
+| Age    | Customer Age       | 
+
+### 3. Product_Details
+| Column      | Description       |
+|-------------|-------------------|
+| Prod_Id     | Unique Product ID |
+| Product     | Name of the coffee|
+| Unit_Cost   | Cost per unit     |
+| Unit_Price  | Price per unit    | 
+
+### 4. Store_Details
+| Column | Description           |
+|--------|-----------------------|
+| Shop_Id| Unique Shop ID        |
+| City   | Shop Location         |
+| Name   | Name of the manager   |
+| Gender | Gender of the manager |
+| Age    | Age of the manager    |
+
+### 5. Sales_Data
+| Column | Description           |
+|--------|-----------------------|
+| Shop_Id| Unique Shop ID        |
+| City   | Shop Location         |
+| Name   | Name of the manager   |
+| Gender | Gender of the manager |
+| Age    | Age of the manager    |
