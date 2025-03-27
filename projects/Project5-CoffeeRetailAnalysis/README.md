@@ -71,7 +71,7 @@ The final Dataset contains 5 tables
 
 ## 🔍 Key Business Questions Answered
 
-1️. What are the top 5 best-selling products?
+1. What are the top 5 best-selling products?
 2. How do monthly sales trends change over time?
 3. Which stores generate the highest revenue?
 4. What is the impact of discounts on net sales?
