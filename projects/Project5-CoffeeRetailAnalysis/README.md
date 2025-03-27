@@ -84,17 +84,23 @@ The final Dataset contains 5 tables
 
 ## ➡️ Project Approach
 
-### 1. Extract, Transform, Load using MySQL
-1. fijwf
-2. fwfw
+### 1. Extract, Transform, Load, and Analysis using MySQL
+1. Created a SQL database and tables, and loaded data from CSV files into the database using Table Data Import Wizard. 
+2. Cleaned data by addressing incorrect date formats, replaced redundant text-based values with Unique ids to initiate faster querying through relational joins.
+3. Deleted unnecessary columns to increase efficiency of data structure.
+4. Added primary and foreign keys to build a star-schema like relational design
+5. Conducted initial data analysis using SQL queries, including CTEs, Joins and window functions.
 
 ### 2. Data Visualatization Using Power BI
-1. iji
-2. dddq
+Connected Power BI to MySQL Database through Direct Query and build the following visuals
+1. Overview - Summary of relevant KPIs like total sales, best product and best store
+2. Product analysis - Understand the distribution of demand, amount sold and gross profils accross different coffee brands
+3. Time-series analysis - graphs that show the transactions over time, allows the viewer to see peak hours/days
+4. Store analysis - To compared managers performance across stores
+5. Customer analysis - To understand most popular products and where gender had an impact on discounts and sales 
 
 ## 🏆 Final Insights
-- u
-- uh
-- ddd
-
-
+- Monday and Friday has the most rush for coffee, probably due to the fact that those are the start and end of the work week
+- There doesnt seem to be a significant difference in net sales and profit across all stores, all stores have gross profit close to the overall average 
+- Colombian coffee is the most popular while Hail is the city with most transactions
+- Net sales increases as total discount increases. This indicates that providing discounts at the right time is beneficial to the overall sales
