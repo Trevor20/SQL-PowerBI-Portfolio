@@ -9,10 +9,10 @@ Here is the overview of the projects:
 
 1. [HR Absenteeism analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project1-HRAbsenteesim) -
 
-2. Airport Air Traffic Analysis -
+2. [Airport Air Traffic Analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project2-AirportAnalysis) -
 
-3. Flight booking Analysis -
+3. [Flight booking Analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project3-FlightBookingAnalysis) -
 
-4. Real Estate Analysis -
+4. [Real Estate Analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project4-RealEstateAnalysis) -
 
-5. Coffee Retail Sales Analysis - 
+5. [Coffee Retail Sales Analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project5-CoffeeRetailAnalysis) - 
