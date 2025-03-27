@@ -7,4 +7,12 @@ Welcome to my personal SQL-PowerBI repository. Here you will find a collection o
 
 Here is the overview of the projects:
 
-1. 
+1. [HR Absenteeism analysis] (https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project1-HRAbsenteesim) -
+
+2. Airport Air Traffic Analysis -
+
+3. Flight booking Analysis -
+
+4. Real Estate Analysis -
+
+5. Coffee Retail Sales Analysis - 
