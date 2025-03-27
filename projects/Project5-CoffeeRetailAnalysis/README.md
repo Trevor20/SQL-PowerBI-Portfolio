@@ -46,7 +46,7 @@ The final Dataset contains 5 tables
 | Unit_Cost   | Cost per unit     |
 | Unit_Price  | Price per unit    | 
 
-### 4. Store_Details
+### 4. Sales_Data
 | Column | Description           |
 |--------|-----------------------|
 | Shop_Id| Unique Shop ID        |
@@ -56,10 +56,15 @@ The final Dataset contains 5 tables
 | Age    | Age of the manager    |
 
 ### 5. Sales_Data
-| Column | Description           |
-|--------|-----------------------|
-| Shop_Id| Unique Shop ID        |
-| City   | Shop Location         |
-| Name   | Name of the manager   |
-| Gender | Gender of the manager |
-| Age    | Age of the manager    |
+| Column        | Description                            |
+|---------------|----------------------------------------|
+| Sales_Id      | Unique Transaction Id                  |
+| Sell_Date     | Date the sale occured                  |
+| Customer      | Customer Id                            |
+| Store         | Store Id                               |
+| Product       | Product Id                             |
+| Quantity      | Amount sold                            |
+| Sales_Amt     | Gross Sales                            |
+| Used_Discount | Whether Customer used discount(Yes/No) |
+| Discount_Amt  | Discount amount                        |
+| Final_Sales   | Net Sales                              |
