@@ -2,14 +2,11 @@
 
 ## 🚀 Project Overview
 
-This project analyzes coffee retail sales data using SQL for data manipulation and Power BI for interactive visualizations. The goal is to derive insights into sales performance, discount impact and customer behavior.
+This project analyzes XYZ data using SQL for data manipulation and Power BI for interactive visualizations. The goal is to derive insights into sales performance, discount impact and customer behavior.
 
 ## 🎯 Objectives 
 
-- Analyze sales trends and identify top-performing products & stores
-- Examine the impact of discounts on net sales & profit margins
-- Evaluate customer purchasing behavior across different demographics
-- Measure store performance based on sales, employees, and management
+- ABC
 
 ## 📖 Dataset
 
@@ -71,16 +68,7 @@ The final Dataset contains 5 tables
 
 ## 🔍 Key Business Questions Answered
 
-1. What are the top 5 best-selling products?
-2. How do monthly sales trends change over time?
-3. Which stores generate the highest revenue?
-4. What is the impact of discounts on net sales?
-5. How does customer gender influence discount usage?
-6. Which stores have the most profitable managers?
-7. What is the customer age distribution of sales?
-8. How do gross profit and discounts correlate?
-9. Which cities contribute the most to sales volume?
-10. How does product profitability vary across locations?
+1. What are
 
 ## ➡️ Project Approach
 
