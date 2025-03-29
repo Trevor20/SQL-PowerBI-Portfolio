@@ -31,22 +31,22 @@ The final Dataset contains 2 tables
 | Destination | Flight destination |
 
 ### 2. Bookings
-| Column                | Description                                   |
-|-----------------------|-----------------------------------------------|
-| Booking_id            | Unique booking Id                           |
+| Column                | Description                                       |
+|-----------------------|---------------------------------------------------|
+| Booking_id            | Unique booking Id                                 |
 | Sales_channel         | Whether passenger used mobile or internet to book |
-| Trip_Type             | Round or one way trip                               |
-| Purchase_Lead         | Days between ticket purchase and flight day                         |
-| Lenght_Of_Stay        | Date the listing was added to the website     |
-| Flight_hour           | Type of apartment                             |
-| Flight_Day            | Cost to purchase                              |
-| Route                 | Whether Apartment is verified listing(Yes/No) |
-| Booking_origin        | Area of the apartment (in Sqft)               |
-| Wants_extra_baggage   | Whether Apartment is furnished(Yes/No)        |
-| Wants_preferred_seat  |
-| Wants_in_flight_meals |
-| Flight_Duration       |
-| Booking_complete      |
+| Trip_Type             | Round or one way trip                             |
+| Purchase_Lead         | Days between ticket purchase and flight day       |
+| Lenght_Of_Stay        | Date the listing was added to the website         |
+| Flight_hour           | Type of apartment                                 |
+| Flight_Day            | Cost to purchase                                  |
+| Route                 | Whether Apartment is verified listing(Yes/No)     |
+| Booking_origin        | Area of the apartment (in Sqft)                   |
+| Wants_extra_baggage   | Whether Apartment is furnished (Yes/No)           |
+| Wants_preferred_seat  | Whether passenger chooses his/her seat (Yes/No)   |
+| Wants_in_flight_meals | Whether passenger wants in-flight meal (Yes/No)   |
+| Flight_Duration       | Duration of flight (in hrs)                       |
+| Booking_complete      | Whether they completed the booking (Yes/No)       |
 
 ## 🔍 Key Business Questions Answered
 
