@@ -2,47 +2,51 @@
 
 ## 🚀 Project Overview
 
-This project analyzes real estate listings data using SQL for data manipulation and Power BI for interactive visualizations. The goal is to derive insights into listing characteristics across different cities in the UAE, listing and price trends over time.
+This project focuses on analysing airline booking data to uncover passengeer booking trends, preferred booking methods, popular destinations and flight-related preferences. 
 
 ## 🎯 Objectives 
 
-- Analyse listing patters during the day and during the week
-- Evaluate apartment characeristics across major cities in the UAE
-- Study price trends as apartment characteristics change
-- Analyse distribution of apartment listings across the UAE to understand where most apartments are located
+- Analyse passenger booking trends
+- Understad passenger travel preferences
+- Evaluate booking behavior
+- Identify key market segments
 
 ## 📖 Dataset
 
-The dateset in this project contains information about apartment listings in UAE. The dataset was initially collected from Kraggle, which contained imformation about listings posted on different listing sites. The dataset includes information like apartment location, date posted and characteristics of the apartment like number of bedrooms, bathrooms, furnished or unfurnished, etc
+The dateset in this project contains information about flight bookings. The dataset was initially collected from Kraggle and contains 50k datapoints. The dataset includes information like no of passengers who booked, type of trip, flight duration, routes, etc.
 
 ## 📁 Database
 
-To facilitate data management and analysis, a database on MySQL was created to store the dataset. MySQL provdies a robust method to organize and manipulate data. A database schema was created to improve organization and efficiency of queries. The structure allows easy integration with tools like Power BI for visualsation.
+To facilitate data management and analysis, a database on MySQL was created to store the dataset. MySQL provdies a robust method to organize and manipulate data. Another table was created to store all the combination of routes.
 
 ## 📂 Database Structure
 
 The final Dataset contains 2 tables 
 
-### 1. Location
-| Column   | Description                             |
-|-------- -|-----------------------------------------|
-| Loc_Id   | Unique Address Id                       |
-| City     | City the apartment is located           |
-| District | District where the apartment is located |
+### 1. Routes
+| Column      | Description        |
+|-------------|--------------------|
+| Id          | Unique routw Id    |
+| Origin      | Flight origin      |
+| Destination | Flight destination |
 
-### 2. real_estate
-| Column         | Description                                   |
-|----------------|-----------------------------------------------|
-| Apt_Id         | Unique Apartment Id                           |
-| DisplayAddress | Location of the apartment                     |
-| Bathrooms      | No of bathrooms                               |
-| Bedrooms       | No of bedrooms                                |
-| AddedOn        | Date the listing was added to the website     |
-| Type           | Type of apartment                             |
-| Price          | Cost to purchase                              |
-| Verified       | Whether Apartment is verified listing(Yes/No) |
-| SizeMin        | Area of the apartment (in Sqft)               |
-| Furnishing     | Whether Apartment is furnished(Yes/No)        |
+### 2. Bookings
+| Column                | Description                                   |
+|-----------------------|-----------------------------------------------|
+| Booking_id            | Unique booking Id                           |
+| Sales_channel         | Whether passenger used mobile or internet to book |
+| Trip_Type             | Round or one way trip                               |
+| Purchase_Lead         | Days between ticket purchase and flight day                         |
+| Lenght_Of_Stay        | Date the listing was added to the website     |
+| Flight_hour           | Type of apartment                             |
+| Flight_Day            | Cost to purchase                              |
+| Route                 | Whether Apartment is verified listing(Yes/No) |
+| Booking_origin        | Area of the apartment (in Sqft)               |
+| Wants_extra_baggage   | Whether Apartment is furnished(Yes/No)        |
+| Wants_preferred_seat  |
+| Wants_in_flight_meals |
+| Flight_Duration       |
+| Booking_complete      |
 
 ## 🔍 Key Business Questions Answered
 
