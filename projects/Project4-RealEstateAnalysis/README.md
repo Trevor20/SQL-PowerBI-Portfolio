@@ -2,11 +2,14 @@
 
 ## 🚀 Project Overview
 
-This project analyzes XYZ data using SQL for data manipulation and Power BI for interactive visualizations. The goal is to derive insights into sales performance, discount impact and customer behavior.
+This project analyzes real estate listings data using SQL for data manipulation and Power BI for interactive visualizations. The goal is to derive insights into listing characteristics across different cities in the UAE, listing and price trends over time.
 
 ## 🎯 Objectives 
 
-- ABC
+- Analyse listing patters during the day and during the week
+- Evaluate apartment characeristics across major cities in the UAE
+- Study price trends as apartment characteristics change
+- analyse distribution of apartment listings across the UAE to understand where most apartments are located
 
 ## 📖 Dataset
 
