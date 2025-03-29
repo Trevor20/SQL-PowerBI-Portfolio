@@ -50,36 +50,35 @@ The final Dataset contains 2 tables
 
 ## 🔍 Key Business Questions Answered
 
-1. What time of day are apartment listings most frequently added?
-2. which days of the week see the highest number of listings?
-3. What are the average characteristics of an apartment across cities in UAE?
-4. How does price change with area?
-5. How does price change with apartment size and number of bathrooms?
-6. How do prices differ between furnished and unfurnished apartments?
-7. How do percentage of verified listings differ across apartment types?
-8. What is the distribution of total apartments across different cities in the UAE?
+1. What is the overall booking volume and passenger count?
+2. What percentage of bookings were paid?
+3. what is the most popular destination, and what is the average flight duration?
+4. At what time of the day do passengers prefer to travel?
+5. At what day of the week do passengers prefer to book flights?
+6. Does the number of extra services corelate with the duration of the flight?
+7. What is the preferred method for booking flights (Mobile app vs website)?
+8. What kind of flights do passengers typically book (one-way vs round trip)?
+9. What are the top 5 countries by passenger bookings?
 
 ## ➡️ Project Approach
 
 ### 1. Extract, Transform, Load, and Analysis using MySQL
-1. Created a SQL database and tables, and loaded data from CSV files into the database using Table Data Import Wizard. 
-2. Cleaned data by replacing redundant text-based values with Unique ids to initiate faster querying through relational joins.
-4. Added primary and foreign keys to build a star-schema like relational design
-5. Conducted initial data analysis using SQL queries, including CTEs and Joins.
+1. Created a SQL database and tables, and loaded data from CSV files into the database using Table Data Import Wizard.
+2. Added a routes table with origin and destination to distinguish between origin and destination.
+3. Conducted initial data analysis using SQL queries, including CTEs and Joins.
 
 ### 2. Data Visualatization Using Power BI
 Connected Power BI to MySQL Database through Direct Query and build the following visuals
-1. Overview - Summary of relevant KPIs like total listings, percentage verified, price per sqft, etc.
-2. City Analysis - table and graphs that show the average characteristics and total listings across cities in UAE
-3. Time-series analysis - graphs that show the no of listings added over time, allows the viewer to see times when website is most active
-4. Price trends - To study how price changes with changes in apartment characteristics like apartment type, furnishing and no of bedrooms
-5. Listing analysis - to determine how many listings are verfied, and how do they change as apartment type changes. It also determines distribution of listings according to no of bedrooms and apartment type
+1. Overview - Summary of relevant KPIs like completed bookings, most popular destinations and average fligt duration.
+2. Time-series analysis - graphs that show times that passengers prefer to booking flights and fly
+3. Passenger preference - graphs that indicate most preferred choice of booking flights and types of flights (one way of round trip)
+4. Market trends - to find the top 5 countries where flights are booked to check locations of majority of their potenial customers.
+5. Extra services potential - do passenger opt for more extra services as flight duration increases
 
 ## 🏆 Final Insights
-- Only listings in Dubai and Abu Dhabi are verified, with Dubai having the majority of verfied listings.
-- Monday, start of the week, has the most listings added.
-- Most of the listings are added around morning from 7 am to 12 pm.
-- Area seems to increase approximately linearly with no of bedrooms.
-- Studio, 1-bedroom and 2-bedroom make up for majority of the listings.
-- In smaller apartments, the prices dont differ much between furnished and unfurnished. However, difference is noticeable for larger apartments like luxury and duplex/triplex apartments.
+- Only 14.96% of total bookings were completed, which suggests potential to push marketing efforts to increase completed bookings.
+- Passengers prefer to travel from 8 am to 12 pm.
+- Passengers book most of their flights on Monday, while the least bookings are on Saturday.
+- While the no of extra services increases with increase in flight duration, the different is minimial with the difference between no services and 3 servies is about 36 minutes in flight duration.
+- Most passengers book on the internet, and almost all passengers book round trip flights. 
 
