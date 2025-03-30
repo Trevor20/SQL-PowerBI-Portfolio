@@ -50,36 +50,29 @@ The final Dataset contains 2 tables
 
 ## 🔍 Key Business Questions Answered
 
-1. What is the overall booking volume and passenger count?
-2. What percentage of bookings were paid?
-3. what is the most popular destination, and what is the average flight duration?
-4. At what time of the day do passengers prefer to travel?
-5. At what day of the week do passengers prefer to book flights?
-6. Does the number of extra services corelate with the duration of the flight?
-7. What is the preferred method for booking flights (Mobile app vs website)?
-8. What kind of flights do passengers typically book (one-way vs round trip)?
-9. What are the top 5 countries by passenger bookings?
+1. How has total passenger traffic evolved between 2000 and 20009?
+2. Which 5 airports handled the highest passenger traffic?
+3. What are the top 5 most popular flight routes based on total passengers?
+4. What percentage of seats remained empty on flights over the years?
+5. How many empty seats per flight were recorded on average?
+6. What is the distribution of flights by purpose (commercial, cargo, other)?
+7. Which 10 states had the highest passenger traffic (incoming and outgoing)?
 
 ## ➡️ Project Approach
 
-### 1. Extract, Transform, Load, and Analysis using MySQL
-1. Created a SQL database and tables, and loaded data from CSV files into the database using Table Data Import Wizard.
-2. Added a routes table with origin and destination to distinguish between origin and destination.
-3. Conducted initial data analysis using SQL queries, including CTEs and Joins.
-
-### 2. Data Visualatization Using Power BI
-Connected Power BI to MySQL Database through Direct Query and build the following visuals
-1. Overview - Summary of relevant KPIs like completed bookings, most popular destinations and average fligt duration.
-2. Time-series analysis - graphs that show times that passengers prefer to booking flights and fly
-3. Passenger preference - graphs that indicate most preferred choice of booking flights and types of flights (one way of round trip)
-4. Market trends - to find the top 5 countries where flights are booked to check locations of majority of their potenial customers.
-5. Extra services potential - do passenger opt for more extra services as flight duration increases
+### 1. Data Transformation and Visualatization Using Power BI
+Cleaned the data by removing redundand columns and creating a airports tables with airport information like population and location. Then created the following main sections of the dashboard to gather insights
+1. Overview - Summary of relevant KPIs like total passengers, longest route, % unoccupied seats per flight, flight distance per route, etc
+2. Time-series analysis - tracks how passenger traffic evolved over the years
+3. Airport popularity - graphs that highlight the busiest airports an popular flight routes
+4. Market trends - Donut chart that indicates the most common purpose of travel
+5. Region wise analysis - Heatmap that indicates top states in the US that have the most passenger traffic (incoming and outgoing)
 
 ## 🏆 Final Insights
-- Only 14.96% of total bookings were completed, which suggests potential to push marketing efforts to increase completed bookings.
-- Passengers prefer to travel from 8 am to 12 pm.
-- Passengers book most of their flights on Monday, while the least bookings are on Saturday.
-- While the no of extra services increases with increase in flight duration, the different is minimial with the difference between no services and 3 servies is about 36 minutes in flight duration.
-- Most passengers book on the internet, and almost all passengers book round trip flights. 
-
-
+- Boston Logan International Airport (BOS) to (Daniel K. Inouye International Airport (HNL) is the most popular route.
+-  Average flight distance is 653.59 nautical miles.
+-  There are about 27 unoccupied seats per flight.
+-  Over 10 years, there are 2037 flights per route.
+-  Passenger traffic had a steep increase till 2007 and then dramatically reduced from 2007-2009. This could be due to the financial crises of 2008
+-  Over 95% of flights were commercial.
+-  California, texas and florida had the most passenger traffic.
