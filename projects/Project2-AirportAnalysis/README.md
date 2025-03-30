@@ -2,51 +2,51 @@
 
 ## 🚀 Project Overview
 
-This project focuses on . 
+This project focuses analysing air traffic across the US from 2000 to 2009. It presents key insights into passenger traffic, flight occupancy, route popularity and state-wise aire travel distribution. It helps stakeholders understand travel demand, airport performance, and flight patterns over the years.
 
 ## 🎯 Objectives 
 
-- Analyse passenger booking trends
-- Understad passenger travel preferences
-- Evaluate booking behavior
-- Identify key market segments
+- Analyse passenger traffic trends over the years
+- Evaluate route and airport popularity
+- Assess seat utilization and efficiency
+- Assess most common flight purposes
+- Gather popularity of regions within the US by analysing total incoming and outgoing passenger traffic
 
 ## 📖 Dataset
 
-The dateset in this project contains information about flight bookings. The dataset was initially collected from Kraggle and contains 50k datapoints. The dataset includes information like no of passengers who booked, type of trip, flight duration, routes, etc.
+The dateset in this project contains information about air travel. The dataset was initially collected from Kraggle and contains over 2 million datapoints. The dataset includes information like flight date, total flights, route, total passengers, empty seats, etc.
 
 ## 📁 Database
 
-To facilitate data management and analysis, a database on MySQL was created to store the dataset. MySQL provdies a robust method to organize and manipulate data. Another table was created to store all the combination of routes.
+To Dataset was directly imported into Power BI. The dataset was cleaned in Power Query by removing redundance columns and empty rows. A new table called routes was created that contained information about airport location and population of the city it was located
 
 ## 📂 Database Structure
 
 The final Dataset contains 2 tables 
 
-### 1. Routes
-| Column      | Description        |
-|-------------|--------------------|
-| Id          | Unique routw Id    |
-| Origin      | Flight origin      |
-| Destination | Flight destination |
+### 1. Airports
+| Column     | Description                                                                  |
+|------------|------------------------------------------------------------------------------|
+| Airport    | 3 Character Airport Name                                                     |
+| Population | Population of the city where the airport is located                          |
+| City       | City in which the airport is located                                         |
+| State      | State in which the airport is located                                        |
+| Country    | United States, added to ensure Power BI knows everything is restricted to US |
 
-### 2. Bookings
-| Column                | Description                                       |
-|-----------------------|---------------------------------------------------|
-| Booking_id            | Unique booking Id                                 |
-| Sales_channel         | Whether passenger used mobile or internet to book |
-| Trip_Type             | Round or one way trip                             |
-| Purchase_Lead         | Days between ticket purchase and flight day       |
-| Lenght_Of_Stay        | Date the listing was added to the website         |
-| Flight_hour           | Type of apartment                                 |
-| Flight_Day            | Cost to purchase                                  |
-| Route                 | Whether Apartment is verified listing(Yes/No)     |
-| Booking_origin        | Area of the apartment (in Sqft)                   |
-| Wants_extra_baggage   | Whether Apartment is furnished (Yes/No)           |
-| Wants_preferred_seat  | Whether passenger chooses his/her seat (Yes/No)   |
-| Wants_in_flight_meals | Whether passenger wants in-flight meal (Yes/No)   |
-| Flight_Duration       | Duration of flight (in hrs)                       |
-| Booking_complete      | Whether they completed the booking (Yes/No)       |
+### 2. Flights
+| Column               | Description                                                    |
+|----------------------|----------------------------------------------------------------|
+| Id                   | Unique Flight Id                                               |
+| Origin_Airport       | Airport from which the plane departed                          |
+| Destination_Airport  | Airport to which the plane landed                              |
+| Passengers           | Total passengers who travelled                                 |
+| Seats                | Total available seats                                          |
+| Flights              | Total number of flights that travelled that route on that date |
+| Distance_per_Flights | Distance from origin to destination                            |
+| Fly_Date             | Date the flight took place                                     |
+| Purpose              | Purpose of the flight (Commercial, Cargo, Other)               |
+| Total Distance       | Total distance travelled by all flights                        |
+| Route                | Origin to destination in format (Origin-->Destination)         |
 
 ## 🔍 Key Business Questions Answered
 
