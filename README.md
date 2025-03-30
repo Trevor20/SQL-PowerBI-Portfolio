@@ -9,7 +9,7 @@ Here is the overview of the projects:
 
 1. [HR Absenteeism analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project1-HRAbsenteesim) -
 
-2. [Airport Air Traffic Analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project2-AirportAnalysis) -
+2. [Airport Air Traffic Analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project2-AirportAnalysis) - This project analyzes the air travel trends in The US from 2000 to 2009. It presents insights into passenger traffic over the years, flight occupancy and popular routes. The dataset was taken from Kraggle and contains over 2 million datapoints. The dataset was cleaned, processed and presented using interactive dashboards in Power BI.
 
 3. [Flight booking Analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project3-FlightBookingAnalysis) - This project analyzes airline bookings to uncover insights about popular routes, customer preferences and booking trends. It contains 50k datapoints of routes from around the world. The dataset was cleaned and initial analysis was done on SQL. The cleaned data was connected to Power BI to create interactive dashboards.
 
