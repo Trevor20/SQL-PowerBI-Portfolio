@@ -32,7 +32,7 @@ The Database contains 3 table
 | Comp/hr | Compensation per hour ($/hour) |
 
 
-### 3. Absent_Data
+### 2. Absent_Data
 | Column | Description             |
 |--------|-------------------------|
 | Number | Unique Reason Id        |
