@@ -61,22 +61,28 @@ The Database contains 3 table
 | Pet                             | No of pets                                    |
 | Weight                          | Employee weight                               |
 | Height                          | Employee height                               |
-| Body mass index                 | Division of weight by height                  |
+| Body mass index                 | Division of weight by height. Also called BMI |
 | Absenteeism time in hours       | Total hours the employee was absent           |
 
 ## 🔍 Key Business Questions Answered
 
-1. How has total passenger traffic evolved between 2000 and 20009?
-2. Which 5 airports handled the highest passenger traffic?
-3. What are the top 5 most popular flight routes based on total passengers?
-4. What percentage of seats remained empty on flights over the years?
-5. How many empty seats per flight were recorded on average?
-6. What is the distribution of flights by purpose (commercial, cargo, other)?
-7. Which 10 states had the highest passenger traffic (incoming and outgoing)?
+1. What is the list of healthy individuals and low absenteeism for a health bonus program?
+2. Calculate wage increase for non-smokers. Budget is $983,221.
+3. How does the no of employees absent vary during the year and during the week?
+4. How does total absent hours vary by age of the employee?
+5. What is the distribution of employees absent according to BMI?
+6. What are the top reasons due to which employees take leave?
+7. Is there a correlatiion between compensation/hr and hours absent?
+8. So social factors (Smoker, drinker, no of education degrees, children and pets) influence absenteeism?
+9. Does having a disciplinary failure impact hours absent?
+10. Does BMI category impact hours absent?
 
 ## ➡️ Project Approach
 
 ### 1. Data Transformation and Visualatization Using Power BI
+Cleaned the data by removing redundand columns and creating a airports tables with airpo
+
+### 2. Data Transformation and Visualatization Using Power BI
 Cleaned the data by removing redundand columns and creating a airports tables with airport information like population and location. Then created the following main sections of the dashboard to gather insights
 1. Overview - Summary of relevant KPIs like total passengers, longest route, % unoccupied seats per flight, flight distance per route, etc
 2. Time-series analysis - tracks how passenger traffic evolved over the years
@@ -85,11 +91,13 @@ Cleaned the data by removing redundand columns and creating a airports tables wi
 5. Region wise analysis - Heatmap that indicates top states in the US that have the most passenger traffic (incoming and outgoing)
 
 ## 🏆 Final Insights
-- Boston Logan International Airport (BOS) to (Daniel K. Inouye International Airport (HNL) is the most popular route.
--  Average flight distance is 653.59 nautical miles.
--  There are about 27 unoccupied seats per flight.
--  Over 10 years, there are 2037 flights per route.
--  Passenger traffic had a steep increase till 2007 and then dramatically reduced from 2007-2009. This could be due to the financial crises of 2008
--  Over 95% of flights were commercial.
--  California, texas and florida had the most passenger traffic.
+- Non-Smokers have a wage increase of approx $1433.
+- March has the month with the highest employees being absent
+- Employees are redundant to take leave on Thursday, with least employees taking leave.
+- Form BMI perspective, more than half of employees who took leave where healthy
+- Significant absent hours came from the age group 31-34.
+- Medical and dental consultations make up majority of the reasons employees take leave.
+- There is a slight correlation between compensation/hr and absent hours
+- No one who had a disciplinary failure took leave
+- Most of the absent hours came from employees who only drinks, but not smokes.
 
