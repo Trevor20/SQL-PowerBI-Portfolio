@@ -79,8 +79,11 @@ The Database contains 3 table
 
 ## ➡️ Project Approach
 
-### 1. Data Transformation and Visualatization Using Power BI
-Cleaned the data by removing redundand columns and creating a airports tables with airpo
+### 1. Data extract, transform and load using SQL
+1. Data from CSV files was loaded into MySQL using Table Data Import Wizard.
+2. Questions from HR was answered using SELECT and JOIN.
+3. A VIEW was created with relevant data needed for absenteeism analysis.
+4. Connected Power BI to MySQL using Direct Query to create interactive dashboards.
 
 ### 2. Data Transformation and Visualatization Using Power BI
 Cleaned the data by removing redundand columns and creating a airports tables with airport information like population and location. Then created the following main sections of the dashboard to gather insights
