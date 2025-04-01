@@ -86,12 +86,16 @@ The Database contains 3 table
 4. Connected Power BI to MySQL using Direct Query to create interactive dashboards.
 
 ### 2. Data Transformation and Visualatization Using Power BI
-Cleaned the data by removing redundand columns and creating a airports tables with airport information like population and location. Then created the following main sections of the dashboard to gather insights
-1. Overview - Summary of relevant KPIs like total passengers, longest route, % unoccupied seats per flight, flight distance per route, etc
-2. Time-series analysis - tracks how passenger traffic evolved over the years
-3. Airport popularity - graphs that highlight the busiest airports an popular flight routes
-4. Market trends - Donut chart that indicates the most common purpose of travel
-5. Region wise analysis - Heatmap that indicates top states in the US that have the most passenger traffic (incoming and outgoing)
+The dashboard has the following main Attributes
+1. Page 1 - Overview -
+      - KPI - Summary of relevent KPIs like total employees, average time absent, % of employees who smoke and/or drink, etc
+      - Time-series analysis - tracks when do employees take leaves
+      -  Employee demographics - Determines employee body factors (BMI, age) that tend to take more leaves
+      - Top reasons - table that indicates the top reasons employees be absent
+3. Page 2 - Absent Factors
+     - Work factors - graphs that indicate whether disciplinary failure and compensation/hr are related to absenteeism
+     - Social factors - Donut charts that provide insights into what social factors like no of education degrees, children and pets affect absenteeism
+     - Health factors - Column charts that indicade whether BMI or smoker/drink affect absenteeism 
 
 ## 🏆 Final Insights
 - Non-Smokers have a wage increase of approx $1433.
@@ -103,4 +107,3 @@ Cleaned the data by removing redundand columns and creating a airports tables wi
 - There is a slight correlation between compensation/hr and absent hours
 - No one who had a disciplinary failure took leave
 - Most of the absent hours came from employees who only drinks, but not smokes.
-
