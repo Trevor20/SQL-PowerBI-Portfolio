@@ -7,7 +7,7 @@ Welcome to my personal SQL-PowerBI repository. Here you will find a collection o
 
 Here is the overview of the projects:
 
-1. [HR Absenteeism analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project1-HRAbsenteesim) -
+1. [HR Absenteeism analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project1-HRAbsenteesim) - This project explores patterns and factors that contribute to absenteeism in the workplace. The fictitious HR also wanted to reward employees with healthy lifestyle to promote healthy living. Data relevant to the analysis and HR requirements was extracted using SQL and the final dataset was presented using interactive dashboards in Power BI.
 
 2. [Airport Air Traffic Analysis](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project2-AirportAnalysis) - This project analyzes the air travel trends in The US from 2000 to 2009. It presents insights into passenger traffic over the years, flight occupancy and popular routes. The dataset was taken from Kraggle and contains over 2 million datapoints. The dataset was cleaned, processed and presented using interactive dashboards in Power BI.
 
