@@ -2,38 +2,44 @@
 
 ## 🚀 Project Overview
 
-This project focuses analysing air traffic across the US from 2000 to 2009. It presents key insights into passenger traffic, flight occupancy, route popularity and state-wise aire travel distribution. It helps stakeholders understand travel demand, airport performance, and flight patterns over the years.
+This project analyses absenteeism in the workplace using attributes like employee demographics, absenteeism reasons, lifestyle choices and compensation. Furthermore, the HR department wantes to promote healthy lifestyle among the employees by providing incentives like bonus. Thus, the HR department also wants information regarding the healthy employees. Data is analyzed and information regarding healthy employees are extracted using SQL. The absenteeism in the workplace is analyzed and presented in Power BI using interactive dashboards.
 
 ## 🎯 Objectives 
 
-- Analyse passenger traffic trends over the years
-- Evaluate route and airport popularity
-- Assess seat utilization and efficiency
-- Assess most common flight purposes
-- Gather popularity of regions within the US by analysing total incoming and outgoing passenger traffic
+1. HR wants the following regarding healthy individuals
+   - Provide a list of healthy individuals and low absenteeism for a health bonus program.
+   - Calculate wage increase for non-smokers - budget $983,221
+3. Create a dashboard to understand absenteeism at work. It consists of
+   - Absenteeism Overview - Key trends, Absenteeism Distribution and top reasons for being absent 
+   - Absenteeism Factors - Analysis of how compensation, disciplinary failure and social lifestyle (Smoker, Drinker, BMI and no of degrees, pets and children) impact absenteeism.
 
 ## 📖 Dataset
 
-The dateset in this project contains information about air travel. The dataset was initially collected from Kraggle and contains over 2 million datapoints. The dataset includes information like flight date, total flights, route, total passengers, empty seats, etc.
+The dateset in this project contains information about employee demographics, reasons for being absent and compensation rates. The dataset includes information like compensation/hr, age, reasons for being absent, no of hours absent, absent day/month, etc
 
 ## 📁 Database
 
-To Dataset was directly imported into Power BI. The dataset was cleaned in Power Query by removing redundance columns and empty rows. A new table called routes was created that contained information about airport location and population of the city it was located
+The database was created in MySQL and the dataset was imported. The questions from HR was answered using SQL queries. A View was created in MySQL with relevant data required for absenteeism analysis. The view was connected to Power BI and an interactive dashboard was created.
 
 ## 📂 Database Structure
 
-The final Dataset contains 2 tables 
+The Database contains 3 table 
 
-### 1. Airports
-| Column     | Description                                                                  |
-|------------|------------------------------------------------------------------------------|
-| Airport    | 3 Character Airport Name                                                     |
-| Population | Population of the city where the airport is located                          |
-| City       | City in which the airport is located                                         |
-| State      | State in which the airport is located                                        |
-| Country    | United States, added to ensure Power BI knows everything is restricted to US |
+### 1. Compensation
+| Column  | Description                    |
+|---------|--------------------------------|
+| Id      | Unique employee Id             |
+| Comp/hr | Compensation per hour ($/hour) |
 
-### 2. Flights
+
+### 3. Absent_Data
+| Column | Description             |
+|--------|-------------------------|
+| Number | Unique Reason Id        |
+| Reason | Reason for being absent |
+
+
+### 3. Absent_Data
 | Column               | Description                                                    |
 |----------------------|----------------------------------------------------------------|
 | Id                   | Unique Flight Id                                               |
