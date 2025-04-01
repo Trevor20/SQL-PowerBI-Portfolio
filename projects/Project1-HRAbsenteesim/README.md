@@ -40,19 +40,29 @@ The Database contains 3 table
 
 
 ### 3. Absent_Data
-| Column               | Description                                                    |
-|----------------------|----------------------------------------------------------------|
-| Id                   | Unique Flight Id                                               |
-| Origin_Airport       | Airport from which the plane departed                          |
-| Destination_Airport  | Airport to which the plane landed                              |
-| Passengers           | Total passengers who travelled                                 |
-| Seats                | Total available seats                                          |
-| Flights              | Total number of flights that travelled that route on that date |
-| Distance_per_Flights | Distance from origin to destination                            |
-| Fly_Date             | Date the flight took place                                     |
-| Purpose              | Purpose of the flight (Commercial, Cargo, Other)               |
-| Total Distance       | Total distance travelled by all flights                        |
-| Route                | Origin to destination in format (Origin-->Destination)         |
+| Column                          | Description                                        |
+|---------------------------------|----------------------------------------------------|
+| Id                              | Unique Employee Id                                 |
+| Reason for absence              | Reason Id                                          |
+| Month of Absence                | Month the employee was absent                      |
+| Day of the week                 | Day the employee was absent                        |
+| Seasons                         | Season the employye was absent (1-4 - Summer, etc) |
+| Transportation expense          | Cost to travel from home to office                 |
+| Distance From residence to work | Distance to work                                   |
+| Service time                    | Source had no info, data is ambiguous              |
+| Age                             | Age of employee                                    |
+| Work load average/day           | Source had no info, data is ambiguous              |
+| Hit target                      | Source had no info, data is ambiguous              |
+| Disciplinary failure            | Whether employee had performance issues (0/1)      |
+| Education                       | No of education degrees                            |
+| Son                             | No of Children                                     |
+| Social Drinker                  | Whether the employee drinks (1/0)                  |
+| Social Smoker                   | Whether the employee smokes (1/0)                  |
+| Pet                             | No of pets                                         |
+| Weight                          | Employee weight                                    |
+| Height                          | Employee height                                    |
+| Body mass index                 | Division of weight by height                       |
+| Absenteeism time in hours       | Total hours the employee was absent                |
 
 ## 🔍 Key Business Questions Answered
 
