@@ -87,10 +87,10 @@ The Database contains 3 table
 
 ### 2. Data Transformation and Visualatization Using Power BI
 The dashboard has the following main Attributes
-1. Page 1 - Overview -
+1. Page 1 - Overview
       - KPI - Summary of relevent KPIs like total employees, average time absent, % of employees who smoke and/or drink, etc
       - Time-series analysis - tracks when do employees take leaves
-      -  Employee demographics - Determines employee body factors (BMI, age) that tend to take more leaves
+      - Employee demographics - Determines employee body factors (BMI, age) that tend to take more leaves
       - Top reasons - table that indicates the top reasons employees be absent
 3. Page 2 - Absent Factors
      - Work factors - graphs that indicate whether disciplinary failure and compensation/hr are related to absenteeism
