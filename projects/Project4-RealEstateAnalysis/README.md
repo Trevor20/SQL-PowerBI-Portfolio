@@ -21,16 +21,9 @@ To facilitate data management and analysis, a database on MySQL was created to s
 
 ## 📂 Database Structure
 
-The final Dataset contains 2 tables 
+The database contains 1 table 
 
-### 1. Location
-| Column   | Description                             |
-|-------- -|-----------------------------------------|
-| Loc_Id   | Unique Address Id                       |
-| City     | City the apartment is located           |
-| District | District where the apartment is located |
-
-### 2. real_estate
+### 1. real_estate
 | Column         | Description                                   |
 |----------------|-----------------------------------------------|
 | Apt_Id         | Unique Apartment Id                           |
@@ -41,6 +34,7 @@ The final Dataset contains 2 tables
 | Type           | Type of apartment                             |
 | Price          | Cost to purchase                              |
 | Verified       | Whether Apartment is verified listing(Yes/No) |
+| priceDuration  | Whether the listing is listed for sale or rent|
 | SizeMin        | Area of the apartment (in Sqft)               |
 | Furnishing     | Whether Apartment is furnished(Yes/No)        |
 
@@ -58,8 +52,9 @@ The final Dataset contains 2 tables
 ## ➡️ Project Approach
 
 ### 1. Extract, Transform, Load, and Analysis using MySQL
-1. Created a SQL database and tables, and loaded data from CSV files into the database using Table Data Import Wizard. 
-2. Cleaned data by replacing redundant text-based values with Unique ids to initiate faster querying through relational joins.
+1. Created a SQL database and tables, and loaded data from CSV files into the database using Table Data Import Wizard.
+2. Since displayAddress column has full addresses of the listings, it was difficult to do city wise analysis. Thus a new table called location was created that contains full addresses of the listings. Then, city and district was extracted from the full addresses and placed in city and district columns respectively.   
+3. Cleaned data by replacing redundant text-based displayAddress values with Unique ids in location table in order to initiate faster querying through relational joins.
 4. Added primary and foreign keys to build a star-schema like relational design
 5. Conducted initial data analysis using SQL queries, including CTEs and Joins.
 
