@@ -4,6 +4,8 @@
 
 This project analyzes real estate listings data using SQL for data manipulation and Power BI for interactive visualizations. The goal is to derive insights into listing characteristics across different cities in the UAE, listing and price trends over time.
 
+## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project4-RealEstateAnalysis/report)
+
 ## 🎯 Objectives 
 
 - Analyse listing patters during the day and during the week
