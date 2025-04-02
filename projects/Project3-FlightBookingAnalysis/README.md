@@ -7,7 +7,7 @@ This project focuses on analysing airline booking data to uncover passengeer boo
 ## 🎯 Objectives 
 
 - Analyse passenger booking trends
-- Understad passenger travel preferences
+- Understand passenger travel preferences
 - Evaluate booking behavior
 - Identify key market segments
 
