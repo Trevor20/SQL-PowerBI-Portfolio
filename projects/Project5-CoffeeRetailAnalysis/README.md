@@ -23,20 +23,20 @@ To facilitate data management and analysis, a database on MySQL was created to s
 
 The final Dataset contains 5 tables
 
-### 1. City_Location                
+### 1. City_Geoocation                
 | Column  | Description    |
 |---------|----------------|
-| City_Id | Unique City ID |
 | City    | City Name      |
 | Lat     | Latitude       |
 | Long    | Longitude      | 
 
 ### 2. Customer_Details
-| Column | Description        |
-|--------|--------------------|
-| Id     | Unique Customer ID |
-| Name   | Full Name          |
-| Age    | Customer Age       | 
+| Column | Description          |
+|--------|----------------------|
+| Id     | Unique Customer ID   |
+| Name   | Full Name            |
+| Age    | Age                  |
+| Gender | Gender (Male/Female) |
 
 ### 3. Product_Details
 | Column      | Description       |
@@ -46,28 +46,29 @@ The final Dataset contains 5 tables
 | Unit_Cost   | Cost per unit     |
 | Unit_Price  | Price per unit    | 
 
-### 4. Sales_Data
-| Column | Description           |
-|--------|-----------------------|
-| Shop_Id| Unique Shop ID        |
-| City   | Shop Location         |
-| Name   | Name of the manager   |
-| Gender | Gender of the manager |
-| Age    | Age of the manager    |
+### 4. Store_Details
+| Column  | Description              |
+|---------|--------------------------|
+| Shop_Id | Unique Shop ID           |
+| City    | Shop Location            |
+| Manager | Full Name of the manager |
+| Gender  | Gender of the manager    |
+| Age     | Age of the manager       |
 
-### 5. Sales_Data
-| Column        | Description                            |
-|---------------|----------------------------------------|
-| Sales_Id      | Unique Transaction Id                  |
-| Sell_Date     | Date the sale occured                  |
-| Customer      | Customer Id                            |
-| Store         | Store Id                               |
-| Product       | Product Id                             |
-| Quantity      | Amount sold                            |
-| Sales_Amt     | Gross Sales                            |
-| Used_Discount | Whether Customer used discount(Yes/No) |
-| Discount_Amt  | Discount amount                        |
-| Final_Sales   | Net Sales                              |
+### 5. Coffee_Purchases
+| Column        | Description                                        |
+|---------------|----------------------------------------------------|
+| Date          | Date the sale occured                              | 
+| Customer_Id   | Customer Id                                        |
+| City          | Location of the store                              |
+| Category      | Type of coffee - Coffee beans is the only category |
+| Product       | Name of the coffee                                 |
+| Unit Price    | Price per cup of coffee                            |
+| Quantity      | Amount sold                                        |
+| Sales Amount  | Gross Sales                                        |
+| Used_Discount | Whether Customer used discount(False/True)         |
+| Discount_Amt  | Discount amount                                    |
+| Final_Sales   | Net Sales                                          |
 
 ## 🔍 Key Business Questions Answered
 
