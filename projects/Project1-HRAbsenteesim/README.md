@@ -4,7 +4,7 @@
 
 This project analyses absenteeism in the workplace using attributes like employee demographics, absenteeism reasons, lifestyle choices and compensation. Furthermore, the HR department wantes to promote healthy lifestyle among the employees by providing incentives like bonus. Thus, the HR department also wants information regarding the healthy employees. Data is analyzed and information regarding healthy employees are extracted using SQL. The absenteeism in the workplace is analyzed and presented in Power BI using interactive dashboards.
 
-[Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project1-HRAbsenteesim/report)
+## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project1-HRAbsenteesim/report)
 
 ## 🎯 Objectives 
 
