@@ -2,7 +2,9 @@
 
 ## 🚀 Project Overview
 
-This project focuses on analysing airline booking data to uncover passengeer booking trends, preferred booking methods, popular destinations and flight-related preferences. 
+This project focuses on analysing airline booking data to uncover passengeer booking trends, preferred booking methods, popular destinations and flight-related preferences.
+
+## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project3-FlightBookingAnalysis/report)
 
 ## 🎯 Objectives 
 
