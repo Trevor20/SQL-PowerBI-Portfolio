@@ -21,27 +21,20 @@ To facilitate data management and analysis, a database on MySQL was created to s
 
 ## 📂 Database Structure
 
-The final Dataset contains 2 tables 
+The database contains 1 table
 
-### 1. Routes
-| Column      | Description        |
-|-------------|--------------------|
-| Id          | Unique route Id    |
-| Origin      | Flight origin      |
-| Destination | Flight destination |
-
-### 2. Bookings
+### 1. Customer_Booking
 | Column                | Description                                       |
 |-----------------------|---------------------------------------------------|
-| Booking_id            | Unique booking Id                                 |
+| Num_passengers            | No of passengers included in the booking      |
 | Sales_channel         | Whether passenger used mobile or internet to book |
 | Trip_Type             | Round or one way trip                             |
 | Purchase_Lead         | Days between ticket purchase and flight day       |
 | Lenght_Of_Stay        | Date the listing was added to the website         |
 | Flight_hour           | Type of apartment                                 |
 | Flight_Day            | Cost to purchase                                  |
-| Route                 | Whether Apartment is verified listing(Yes/No)     |
-| Booking_origin        | Area of the apartment (in Sqft)                   |
+| Route                 | Origin to destination (in format OriginDestination|
+| Booking_origin        | Country from which the booking was done           |
 | Wants_extra_baggage   | Whether Apartment is furnished (Yes/No)           |
 | Wants_preferred_seat  | Whether passenger chooses his/her seat (Yes/No)   |
 | Wants_in_flight_meals | Whether passenger wants in-flight meal (Yes/No)   |
