@@ -4,6 +4,8 @@
 
 This project analyzes coffee retail sales data using SQL for data manipulation and Power BI for interactive visualizations. The goal is to derive insights into sales performance, discount impact and customer behavior.
 
+[Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project5-CoffeeRetailAnalysis/reports)
+
 ## 🎯 Objectives 
 
 - Analyze sales trends and identify top-performing products & stores
