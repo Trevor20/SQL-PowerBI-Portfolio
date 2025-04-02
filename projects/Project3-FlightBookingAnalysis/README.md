@@ -26,7 +26,7 @@ The final Dataset contains 2 tables
 ### 1. Routes
 | Column      | Description        |
 |-------------|--------------------|
-| Id          | Unique routw Id    |
+| Id          | Unique route Id    |
 | Origin      | Flight origin      |
 | Destination | Flight destination |
 
