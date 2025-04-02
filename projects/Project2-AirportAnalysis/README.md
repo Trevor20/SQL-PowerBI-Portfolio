@@ -22,31 +22,26 @@ To Dataset was directly imported into Power BI. The dataset was cleaned in Power
 
 ## 📂 Database Structure
 
-The final Dataset contains 2 tables 
+The Database contains 1 table
 
-### 1. Airports
-| Column     | Description                                                                  |
-|------------|------------------------------------------------------------------------------|
-| Airport    | 3 Character Airport Name                                                     |
-| Population | Population of the city where the airport is located                          |
-| City       | City in which the airport is located                                         |
-| State      | State in which the airport is located                                        |
-| Country    | United States, added to ensure Power BI knows everything is restricted to US |
-
-### 2. Flights
-| Column               | Description                                                    |
-|----------------------|----------------------------------------------------------------|
-| Id                   | Unique Flight Id                                               |
-| Origin_Airport       | Airport from which the plane departed                          |
-| Destination_Airport  | Airport to which the plane landed                              |
-| Passengers           | Total passengers who travelled                                 |
-| Seats                | Total available seats                                          |
-| Flights              | Total number of flights that travelled that route on that date |
-| Distance_per_Flights | Distance from origin to destination                            |
-| Fly_Date             | Date the flight took place                                     |
-| Purpose              | Purpose of the flight (Commercial, Cargo, Other)               |
-| Total Distance       | Total distance travelled by all flights                        |
-| Route                | Origin to destination in format (Origin-->Destination)         |
+### 1. Airport_Data
+| Column                 | Description                                                    |
+|------------------------|----------------------------------------------------------------|
+| Origin_Airport         | Airport from which the plane departed (IATA 3 character format)|
+| Destination_Airport    | Airport to which the plane landed (IATA 3 Character format)    |
+| Origin_City            | City in which the departure airport is located                 |
+| Destination_City       | City in which arrival airport is located                       |
+| Passengers             | Total passengers who travelled                                 |
+| Seats                  | Total available seats                                          |
+| Flights                | Total number of flights that travelled that route on that date |
+| Distance               | Distance from origin to destination                            |
+| Fly_Date               | Date the flight took place                                     |
+| Origin_population      | Population of the city where the origin airport is located     |
+| Destination_population | Population of the city where the destination airport is located|
+| Org_airport_lat        | Latitude of the origin airport                                 |
+| Org_airport_Long       | Longitude of the origin airport                                |
+| Dest_airport_lat       | Latitude of the origin airport                                 |
+| Dest_airport_long      | Longitude of the origin airport                                |
 
 ## 🔍 Key Business Questions Answered
 
@@ -60,8 +55,15 @@ The final Dataset contains 2 tables
 
 ## ➡️ Project Approach
 
-### 1. Data Transformation and Visualatization Using Power BI
-Cleaned the data by removing redundand columns and creating a airports tables with airport information like population and location. Then created the following main sections of the dashboard to gather insights
+### 1. Data Cleaning and Transformation using Power Query in Power BI
+1. Since latitude and longitude columns had many empty rows and Origin/destination city existed, having both latitude/longitude and city information is redundance. So, latitude/longitude columns were removed.
+2. Created a new table Airports with information that were constant like airport name, city and population. Removed the columns in airport_data that existed in airports table
+3. Since city columns contained states too, the city columns were split into city and state. Another column country was added to ensure Power BI knows cities are restricted to the US.
+4. Added a new column routes with format as origin_airport-->destination_airport to analyse popular routes.
+5. Added a new column purpose that indicates the purpose of the flight. Flights with 0 passenger tend to be cargo flights, while flights with at least 1 passenger tend to be commercial.
+
+### 1. Data Visualatization Using Power BI
+Created the following main sections of the dashboard to gather insights
 1. Overview - Summary of relevant KPIs like total passengers, longest route, % unoccupied seats per flight, flight distance per route, etc
 2. Time-series analysis - tracks how passenger traffic evolved over the years
 3. Airport popularity - graphs that highlight the busiest airports an popular flight routes
