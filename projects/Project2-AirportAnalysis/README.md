@@ -64,7 +64,7 @@ The Database contains 1 table
 4. Added a new column routes with format as origin_airport-->destination_airport to analyse popular routes.
 5. Added a new column purpose that indicates the purpose of the flight. Flights with 0 passenger tend to be cargo flights, while flights with at least 1 passenger tend to be commercial.
 
-### 1. Data Visualatization Using Power BI
+### 2. Data Visualatization Using Power BI
 Created the following main sections of the dashboard to gather insights
 1. Overview - Summary of relevant KPIs like total passengers, longest route, % unoccupied seats per flight, flight distance per route, etc
 2. Time-series analysis - tracks how passenger traffic evolved over the years
