@@ -97,31 +97,30 @@ Three tables were created in MySQL"
 
 ## ➡️ Project Approach
 
-### 1. Data extract, transform and load using SQL
+### 1. Data preparation in MySQL
 1. Data from CSV files was loaded into MySQL using Table Data Import Wizard.
 2. Questions from HR was answered using SELECT and JOIN.
-3. A VIEW was created with relevant data needed for absenteeism analysis.
+3. A VIEW was created with relevant data for dashboarding.
 4. Connected Power BI to MySQL using Direct Query to create interactive dashboards.
 
-### 2. Data Transformation and Visualatization Using Power BI
+### 2. Dashboard Development in Power BI
 The dashboard has the following main Attributes
-1. Page 1 - Overview
-      - KPI - Summary of relevent KPIs like total employees, average time absent, % of employees who smoke and/or drink, etc
-      - Time-series analysis - tracks when do employees take leaves
+1. Page 1 - Absenteeism Overview
+      - KPI - Summary of relevent KPIs like total employees, average time absent, % of smokers/drinkers, etc
+      - Time-series analysis - tracks when employees take leaves
       - Employee demographics - Determines employee body factors (BMI, age) that tend to take more leaves
-      - Top reasons - table that indicates the top reasons employees be absent
-3. Page 2 - Absent Factors
+      - Top reasons - table that indicates primary absent causes
+3. Page 2 - Absenteeism Factors
      - Work factors - graphs that indicate whether disciplinary failure and compensation/hr are related to absenteeism
-     - Social factors - Donut charts that provide insights into what social factors like no of education degrees, children and pets affect absenteeism
-     - Health factors - Column charts that indicade whether BMI or smoker/drink affect absenteeism 
+     - Social factors - Provide insights into what social factors affect absenteeism
+     - Health factors - Column charts that indicade whether BMI or smoker/drinker affect absenteeism 
 
 ## 🏆 Final Insights
-- Non-Smokers have a wage increase of approx $1433.
-- March has the month with the highest employees being absent
-- Employees are redundant to take leave on Thursday, with least employees taking leave.
-- Form BMI perspective, more than half of employees who took leave where healthy
-- Significant absent hours came from the age group 31-34.
-- Medical and dental consultations make up majority of the reasons employees take leave.
-- There is a slight correlation between compensation/hr and absent hours
-- No one who had a disciplinary failure took leave
-- Most of the absent hours came from employees who only drinks, but not smokes.
+- 📈 Non-Smokers are eligible for a wage increase of approx $1433.
+- 📆 March sees the highest number of absentees; Thursdays the lowest.
+- 🦾 Over 50% of employees taking leave are in the healthy BMI range.
+- 🧔 Significant absent hours come from the 31-34 age group.
+- 🦷 Medical and dental consultations make up majority of the leaves.
+- 💰 There is a slight positive correlation between compensation/hour and absent hours
+- 0️⃣ No one who had a disciplinary failure took leave
+- 🍹 Employees who drink but do not smoke had the highest absent hours.
