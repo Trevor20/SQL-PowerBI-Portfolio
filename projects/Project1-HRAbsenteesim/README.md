@@ -43,7 +43,7 @@ The database was created in MySQL and the dataset was imported. The questions fr
 
 ## 📂 Database Structure
 
-The Database contains 3 table 
+Three tables were created in MySQL" 
 
 ### 1. Compensation
 | Column  | Description                    |
@@ -86,16 +86,14 @@ The Database contains 3 table
 
 ## 🔍 Key Business Questions Answered
 
-1. What is the list of healthy individuals and low absenteeism for a health bonus program?
+1. Who are the healthy individuals with low absenteeism eligible for a health bonus program?
 2. Calculate wage increase for non-smokers. Budget is $983,221.
-3. How does the no of employees absent vary during the year and during the week?
-4. How does total absent hours vary by age of the employee?
-5. What is the distribution of employees absent according to BMI?
-6. What are the top reasons due to which employees take leave?
-7. Is there a correlatiion between compensation/hr and hours absent?
-8. So social factors (Smoker, drinker, no of education degrees, children and pets) influence absenteeism?
-9. Does having a disciplinary failure impact hours absent?
-10. Does BMI category impact hours absent?
+3. How does absenteeism vary accross weekdays and months?
+4. What are the top reasons employees take leave?
+5. Is there a correlatiion between age or compensation and absent hours?
+6. Does lifestyle(Smoking, drinking, education, children, pets) influence absenteeism?
+7. Does having a disciplinary failure impact hours absent?
+8. Does BMI impact absenteeism?
 
 ## ➡️ Project Approach
 
