@@ -1,14 +1,14 @@
-# Air Traffic Analysis in USA from 2000-2009 using Power BI
+# U.S Domestic Air Traffic Analysis(2000-2009) with Power BI
 
 ## 🚀 Project Overview
 
-This project focuses on analysing air traffic across the US from 2000 to 2009. It presents key insights into passenger traffic, flight occupancy, route popularity and state-wise aire travel distribution. It helps stakeholders understand travel demand, airport performance, and flight patterns over the years.
+This project focuses on analysing air traffic across the US from 2000 to 2009. It presents key insights into passenger traffic, seat occupancy, route popularity and state-wise air travel distribution. It helps stakeholders understand travel demand, airport performance, and flight patterns over the years.
 
 ## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project2-AirportAnalysis/report)
 
 ## 🧠 Business Problem
 
-The Federal Aviation Administration (FAA) wants to analyse major domestic routes in The US to optimize terminal usage, staffing and airplane seats across peak routes and airports.
+With increasing passenger demand and variable flight occupancy across The U.S, The Federal Aviation Administration (FAA) seeks to analyse major domestic routes in The US to optimize terminal usage, staffing and airplane seats across peak routes and airports.
 
 ## 🎯 Objectives 
 
@@ -20,22 +20,22 @@ The Federal Aviation Administration (FAA) wants to analyse major domestic routes
 
 ## 📖 Dataset
 
-The dateset in this project contains information about air travel. The dataset was initially collected from Kraggle and contains over 2 million datapoints. The dataset includes information like flight date, total flights, route, total passengers, empty seats, etc.
+The dateset in this project contains information about air travel. The dataset was sourced from Kraggle and contains over 2 million records tracking U.S. domestic air traffic from 2000 to 2009. It includes attributes like flight dates, route details, passenger counts, seats available, and airport locations.
 
 ## 🧰 Tools Used
 
-1. Power BI - For interactive dashboard creation and data visualization.
-2. Power Query Editor - For data loading, cleaning and transformation (M language).
-3. DAX - For calculated columns, KPIs and ranking.
-4. Data Modelling - Star Schema and relationship setup between data tables. 
+1. Power BI - For interactive dashboard creation and visual analytics.
+2. Power Query Editor (M Language) - For data loading, cleaning and transformation.
+3. DAX - For calculated columns, measures, and KPIs.
+4. Data Modelling - Star Schema with related dimension tables. 
 
-## 📁 Database
+## 📁 Database Preparation & Modelling
 
-To Dataset was directly imported into Power BI. The dataset was cleaned in Power Query by removing redundance columns and empty rows. A new table called routes was created that contained information about airport location and population of the city it was located
+The Dataset was loaded directly into Power BI and cleaned using Power Query Editor. Latitude and longitude fields were dropped due to redundancy. A new "Airports" dimension table was created to normalize airport data (name, city, state, and population). Additionally, route and purpose columns were derived to support route-level and purpose-based analysis.
 
 ## 📂 Database Structure
 
-The Database contains 1 table
+Below is the structure of the primary fact table used for analysis, after cleaning and transformation.
 
 ### 1. Airport_Data
 | Column                 | Description                                                    |
@@ -52,13 +52,13 @@ The Database contains 1 table
 | Origin_population      | Population of the city where the origin airport is located     |
 | Destination_population | Population of the city where the destination airport is located|
 | Org_airport_lat        | Latitude of the origin airport                                 |
-| Org_airport_Long       | Longitude of the origin airport                                |
-| Dest_airport_lat       | Latitude of the origin airport                                 |
-| Dest_airport_long      | Longitude of the origin airport                                |
+| Org_airport_long       | Longitude of the origin airport                                |
+| Dest_airport_lat       | Latitude of the destination airport                            |
+| Dest_airport_long      | Longitude of the destination airport                           |
 
 ## 🔍 Key Business Questions Answered
 
-1. How has total passenger traffic evolved between 2000 and 20009?
+1. How has total passenger traffic evolved between 2000 and 2009?
 2. Which 5 airports handled the highest passenger traffic?
 3. What are the top 5 most popular flight routes based on total passengers?
 4. What percentage of seats remained empty on flights over the years?
