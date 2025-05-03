@@ -23,11 +23,13 @@ Employee absenteeism directly affects productivity and efficiency. The HR depart
 
 ## 📖 Dataset
 
-The dateset in this project contains information about employee demographics, reasons for being absent and compensation rates. The dataset includes information like compensation/hr, age, reasons for being absent, no of hours absent, absent day/month, etc
+The dataset includes information on:
+- Demographics: Age, education, BMI, children, pets
+- Compensation: Compensation per hour
+- Lifestyle: Smoking, drinking habits
+- Absenteeism: Reasons, number of hours, days of the week, and months
 
-## 📁 Database
-
-The database was created in MySQL and the dataset was imported. The questions from HR was answered using SQL queries. A View was created in MySQL with relevant data required for absenteeism analysis. The view was connected to Power BI and an interactive dashboard was created.
+The data is anonymized and provided in CSV format. The dataset has 740 records.
 
 ## 🧰 Tools Used
 - MySQL - For data cleaning, joins and transformations using SQL queries and views
@@ -35,6 +37,9 @@ The database was created in MySQL and the dataset was imported. The questions fr
 - DAX - For calculated measures, KPIs and time-based metrics
 - Data Modelling - Star schema and relationship setup between data tables
 
+## 📁 Database
+
+The database was created in MySQL and the dataset was imported. The questions from HR was answered using SQL queries. A View was created in MySQL with relevant data required for absenteeism analysis. The view was connected to Power BI and an interactive dashboard was created.
 
 ## 📂 Database Structure
 
