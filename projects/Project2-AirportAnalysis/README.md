@@ -6,17 +6,28 @@ This project focuses on analysing air traffic across the US from 2000 to 2009. I
 
 ## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project2-AirportAnalysis/report)
 
+## 🧠 Business Problem
+
+The Federal Aviation Administration (FAA) wants to analyse major domestic routes in The US to optimize terminal usage, staffing and airplane seats across peak routes and airports.
+
 ## 🎯 Objectives 
 
-- Analyse passenger traffic trends over the years
-- Evaluate route and airport popularity
-- Assess seat utilization and efficiency
-- Assess most common flight purposes
-- Gather popularity of regions within the US by analysing total incoming and outgoing passenger traffic
+- Analyse passenger traffic trends over the years.
+- Evaluate popularity of routes, airports and regions.
+- Assess seat utilization and efficiency.
+- Assess most common flight purposes.
+- Gather popularity of regions within the US by analysing total incoming and outgoing passenger traffic.
 
 ## 📖 Dataset
 
 The dateset in this project contains information about air travel. The dataset was initially collected from Kraggle and contains over 2 million datapoints. The dataset includes information like flight date, total flights, route, total passengers, empty seats, etc.
+
+## 🧰 Tools Used
+
+1. Power BI - For interactive dashboard creation and data visualization.
+2. Power Query Editor - For data loading, cleaning and transformation (M language).
+3. DAX - For calculated columns, KPIs and ranking.
+4. Data Modelling - Star Schema and relationship setup between data tables. 
 
 ## 📁 Database
 
@@ -57,7 +68,7 @@ The Database contains 1 table
 
 ## ➡️ Project Approach
 
-### 1. Data Cleaning and Transformation using Power Query in Power BI
+### 1. Data Cleaning and Transformation using Power Query Editor
 1. Since latitude and longitude columns had many empty rows and Origin/destination city existed, having both latitude/longitude and city information is redundance. So, latitude/longitude columns were removed.
 2. Created a new table Airports with information that were constant like airport name, city and population. Removed the columns in airport_data that existed in airports table
 3. Since city columns contained states too, the city columns were split into city and state. Another column country was added to ensure Power BI knows cities are restricted to the US.
