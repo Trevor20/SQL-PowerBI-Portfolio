@@ -2,16 +2,22 @@
 
 ## 🚀 Project Overview
 
-This project analyses absenteeism in the workplace using attributes like employee demographics, absenteeism reasons, lifestyle choices and compensation. Furthermore, the HR department wantes to promote healthy lifestyle among the employees by providing incentives like bonus. Thus, the HR department also wants information regarding the healthy employees. Data is analyzed and information regarding healthy employees are extracted using SQL. The absenteeism in the workplace is analyzed and presented in Power BI using interactive dashboards.
+This project analyses workplace absenteeism using employee demographics, lifestyle choices and compensation data. Furthermore, the HR department is looking to promote a healthy workforce through incentive programs like a bonus. Specifically, they aim to identify healthy employees with low absenteeism for a health bonus and evaluate compensation adjustments for non-smokers.
+
+Data was cleaned and analysed using SQL, and key trends and insights was visualized and presented in Power BI through interactive dashboards.
 
 ## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project1-HRAbsenteesim/report)
 
+## 🧠 Business Problem
+
+Employee absenteeism directly affects productivity and efficiency. The HR department wants to understand the major reasons of absenteeism and identify areas where intervention - through wellness programs and compensation changes - can reduce unplanned leave and encourage healthier employee behaviour.
+
 ## 🎯 Objectives 
 
-1. HR wants the following regarding healthy individuals
+1. HR wants the following information for their incentive programs
    - Provide a list of healthy individuals and low absenteeism for a health bonus program.
    - Calculate wage increase for non-smokers - budget $983,221
-3. Create a dashboard to understand absenteeism at work. It consists of
+2. Develop a Power BI dashboard to help HR understand key absenteeism patterns accross time, demographics and lifestyle
    - Absenteeism Overview - Key trends, Absenteeism Distribution and top reasons for being absent 
    - Absenteeism Factors - Analysis of how compensation, disciplinary failure and social lifestyle (Smoker, Drinker, BMI and no of degrees, pets and children) impact absenteeism.
 
@@ -22,6 +28,13 @@ The dateset in this project contains information about employee demographics, re
 ## 📁 Database
 
 The database was created in MySQL and the dataset was imported. The questions from HR was answered using SQL queries. A View was created in MySQL with relevant data required for absenteeism analysis. The view was connected to Power BI and an interactive dashboard was created.
+
+## 🧰 Tools Used
+- MySQL - For data cleaning, joins and transformations using SQL queries and views
+- Power BI - For interactive dashboard creation and data visualization
+- DAX - For calculated measures, KPIs and time-based metrics
+- Data Modelling - Star schema and relationship setup between data tables
+
 
 ## 📂 Database Structure
 
