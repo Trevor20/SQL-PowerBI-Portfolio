@@ -37,24 +37,16 @@ The Dataset was loaded directly into Power BI and cleaned using Power Query Edit
 
 Below is the structure of the primary fact table used for analysis, after cleaning and transformation.
 
-### 1. Airport_Data
+### 1. Flights
 | Column                 | Description                                                    |
 |------------------------|----------------------------------------------------------------|
 | Origin_Airport         | Airport from which the plane departed (IATA 3 character format)|
 | Destination_Airport    | Airport to which the plane landed (IATA 3 Character format)    |
-| Origin_City            | City in which the departure airport is located                 |
-| Destination_City       | City in which arrival airport is located                       |
 | Passengers             | Total passengers who travelled                                 |
 | Seats                  | Total available seats                                          |
 | Flights                | Total number of flights that travelled that route on that date |
-| Distance               | Distance from origin to destination                            |
+| Distance_per_flight    | Distance from origin to destination                            |
 | Fly_Date               | Date the flight took place                                     |
-| Origin_population      | Population of the city where the origin airport is located     |
-| Destination_population | Population of the city where the destination airport is located|
-| Org_airport_lat        | Latitude of the origin airport                                 |
-| Org_airport_long       | Longitude of the origin airport                                |
-| Dest_airport_lat       | Latitude of the destination airport                            |
-| Dest_airport_long      | Longitude of the destination airport                           |
 
 ## 🔍 Key Business Questions Answered
 
@@ -68,26 +60,26 @@ Below is the structure of the primary fact table used for analysis, after cleani
 
 ## ➡️ Project Approach
 
-### 1. Data Cleaning and Transformation using Power Query Editor
-1. Since latitude and longitude columns had many empty rows and Origin/destination city existed, having both latitude/longitude and city information is redundance. So, latitude/longitude columns were removed.
-2. Created a new table Airports with information that were constant like airport name, city and population. Removed the columns in airport_data that existed in airports table
-3. Since city columns contained states too, the city columns were split into city and state. Another column country was added to ensure Power BI knows cities are restricted to the US.
-4. Added a new column routes with format as origin_airport-->destination_airport to analyse popular routes.
-5. Added a new column purpose that indicates the purpose of the flight. Flights with 0 passenger tend to be cargo flights, while flights with at least 1 passenger tend to be commercial.
+### 1. Data Cleaning & Transformation using Power Query Editor
+1. Removed Redundant Fields: Latitude and longitude columns were dropped due to many missing values and existance of city location.
+2. Created Dimension Table: Airports: Includes airport name, city and city population. Removed the columns in airport_data that existed in airports table
+3. Split Location Data: City fields were split into City, State, and Country to support geospatial visuals and to ensure Power BI correctly interprets U.S. cities. 
+4. Derived Route Column: Created a new column in the format origin_airport-->destination_airport to analyse route popularity.
+5. Categorized Flight Purpose: Created a new column "Purpose" that indicates the purpose of the flight. Flights with 0 passenger were tagged as "Cargo", while others were tagged "Commercial".
 
 ### 2. Data Visualatization Using Power BI
 Created the following main sections of the dashboard to gather insights
-1. Overview - Summary of relevant KPIs like total passengers, longest route, % unoccupied seats per flight, flight distance per route, etc
-2. Time-series analysis - tracks how passenger traffic evolved over the years
-3. Airport popularity - graphs that highlight the busiest airports an popular flight routes
-4. Market trends - Donut chart that indicates the most common purpose of travel
-5. Region wise analysis - Heatmap that indicates top states in the US that have the most passenger traffic (incoming and outgoing)
+1. Overview - Summary of relevant KPIs like total passengers, longest route, % unoccupied seats per flight, flight distance per route, etc.
+2. Time-series analysis - tracks how passenger traffic evolved over the years.
+3. Airport popularity - graphs that highlight top airports and popular flight routes.
+4. Market trends - Donut chart that indicates the most common purpose of travel.
+5. Region wise analysis - Heatmap of U.S. states based on total passenger traffic(incoming and outgoing).
 
 ## 🏆 Final Insights
-- Boston Logan International Airport (BOS) to (Daniel K. Inouye International Airport (HNL) is the most popular route.
--  Average flight distance is 653.59 nautical miles.
--  There are about 27 unoccupied seats per flight.
--  Over 10 years, there are 2037 flights per route.
--  Passenger traffic had a steep increase till 2007 and then dramatically reduced from 2007-2009. This could be due to the financial crises of 2008
--  Over 95% of flights were commercial.
--  California, texas and florida had the most passenger traffic.
+- ✈️ Most popular route: Boston Logan International Airport (BOS) to (Daniel K. Inouye International Airport (HNL).
+- ▶️ Average flight distance: 653.59 nautical miles.
+- 💺 Average Unoccupied Seats per flight: 27.
+- 🔄 Flights per route: 2,037 over 10 years.
+- 📉 Passenger volume rose steadily until 2007, then declined sharply during the 2008 financial crisis.
+- 🏗️ Flight Purpose - Over 95% of flights were commercial.
+- 🌎 Top U.S. States by Traffic: California, Texas and Florida.
