@@ -43,7 +43,7 @@ The database was created in MySQL and the dataset was imported. The questions fr
 
 ## 📂 Database Structure
 
-Three tables were created in MySQL" 
+Three tables were created in MySQL
 
 ### 1. Compensation
 | Column  | Description                    |
