@@ -1,21 +1,21 @@
-# Airline Booking Analysis With SQL and Power BI
+# Flight Booking Analysis using SQL & Power BI
 
 ## 🚀 Project Overview
 
-This project focuses on analysing airline booking data to uncover passenger booking trends, preferred booking methods, popular destinations and flight-related preferences.
+This project explores historical flight booking data to uncover patterns in passenger behavior, booking methods, popular destinations and flight-related preferences. The goal is to help the airline understand customer preferences and optimize marketing and operational strategies.
 
 ## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project3-FlightBookingAnalysis/report)
 
 ## 🎯 Objectives 
 
 - Analyse weekly booking trends.
-- Assess hourly air traffic.
-- Evaluate customer preferences for trip type and method of booking flights.
-- Identity major customer market segments.
+- Assess preferred flight hours and booking days.
+- Evaluate customer preferences for trip type and booking channels.
+- Identity key market segments by booking origin and travel behavior.
 
 ## 🧠 Business Problem
 
-An Airline wants to understand customer behavior and route-level booking trends to improve marketing campaigns and operational efficiency. Key stakeholders are interested in analyzing booking volume, customer preferences with booking flights and in-flight services, and route popularity.
+An Airline wants to understand customer behavior and booking patterns to improve marketing campaigns and operational efficiency. Key stakeholders are interested in analyzing booking volume, customer preferences in booking flights and extra services, and identifying major booking sources by geography.
 
 ## 📖 Dataset
 
