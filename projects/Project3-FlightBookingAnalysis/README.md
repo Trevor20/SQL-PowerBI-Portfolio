@@ -28,11 +28,11 @@ The dataset represents booking-level data collected by an airline. Each row in t
 - Power Query Editor - Data transformation using M language
 - DAX - Creating date table, calculated measures and KPI calculation
 
-## 📁 Database
+## 📁 Initial Analysis in SQL
 
-To facilitate initial data analysis before building a dashboard on Power BI, a database was created in MySQL and a flat table was imported into the database. An initial data analysis was conducted in SQL to gain an understanding of the data
+To facilitate initial data analysis before building a dashboard, a database was created in MySQL and a flat table was imported into the database. An initial exploratory analysis was conducted in SQL to gain early insights before importing the data into Power BI.
 
-## 📂 Database Structure
+## 📂 Dataset Structure
 
 One table was created in MySQL
 
@@ -43,7 +43,7 @@ One table was created in MySQL
 | Sales_channel         | Whether passenger used mobile or internet to book           |
 | Trip_Type             | Round or one way trip                                       |
 | Purchase_Lead         | Days between ticket purchase and flight day                 |
-| Lenght_Of_Stay        | No of days the passengers will stay at the destination      |
+| Length_Of_Stay        | No of days the passengers will stay at the destination      |
 | Flight_hour           | Time the flight departs                                     |
 | Flight_Day            | Day of the week the flight departs                          |
 | Route                 | Origin to destination (in format OriginDestination          |
@@ -58,38 +58,38 @@ One table was created in MySQL
 
 1. What is the overall booking volume and passenger count?
 2. What percentage of bookings were completed?
-3. what is the most popular destination, and what is the average flight duration?
+3. what are the most popular destinations, and what is the average flight duration?
 4. At what time of the day do passengers prefer to travel?
 5. At what day of the week do passengers prefer to book flights?
-6. Does the number of extra services correlate with the duration of the flight?
+6. Is there a correlation between extra service selection and flight duration?
 7. What is the preferred method for booking flights (Mobile app vs website)?
 8. What kind of flights do passengers typically book (one-way vs round trip)?
-9. From which countries did the airline receive the most bookings?
+9. Which countries generated the most bookings?
 
 ## ➡️ Project Approach
 
-### 1. Data Load, and Analysis using MySQL
-1. Created a SQL database and tables, and loaded data from CSV files into the database using Table Data Import Wizard.
-2. Conducted initial data analysis using SQL queries, including CTEs and Joins.
+### 1. Data Load, and Exploration using MySQL
+- Created a database and loaded CSV data using Table Data Import Wizard.
+- Conducted initial data analysis using SQL queries, including CTEs and Joins.
 
 ### 2. Data Cleaning and Transformation using Power Query Editor
-1. Data load - The table was directly loaded into Power BI.
-2. Added Index column - An index column was added to check number of bookings.
-3. Split "Route" column - Split "Route" column into "Origin" and "Destination". Deleted the route column for redundancy.
-4. Added "Total extra services" - To check total no of extra services (extra baggage, preferred seat, in-flight meal) chosen in the booking.
-5. Rename columns - Renamed columns for better data reading for the user.
+- Data load - The table was directly loaded into Power BI.
+- Added Index column - To track number of bookings.
+- Split "Route" column - Split it into "Origin" and "Destination". Deleted the route column for redundancy.
+- Added "Total extra services" column - To check total no of extra services (extra baggage, preferred seat, in-flight meal) chosen in the booking.
+- Rename columns - For better clarity and consistency.
 
 ### 3. Data Visualization Using Power BI
-1. Overview - Summary of relevant KPIs like completed bookings, most popular destinations and average flight duration.
-2. Time-series analysis - Determines times that passengers prefer to booking flights and fly.
-3. Passenger preference - Indicates most preferred choice of booking flights and trip type.
-4. Market trends - To find top countries where majority of their customers book flights.
-5. Extra services potential - To determine whether passengers opt for more extra services as flight duration increases.
+- Overview - Summary of relevant KPIs like completed bookings, most popular destinations and average flight duration.
+- Time-series analysis - Determines times that passengers prefer to booking flights and fly.
+- Passenger preference - Indicates most preferred choice of booking flights and trip type.
+- Market trends - To find top countries where majority of their customers book flights.
+- Extra services - To determine whether passengers opt for more extra services as flight duration increases.
 
 ## 🏆 Final Insights
-- 📉 Only 14.96% of total bookings were completed, which suggests to increase marketing efforts to increase completed bookings.
-- ✈️ Passengers prefer to travel from 8 am to 12 pm.
-- 📆 Passengers book most of their flights on Monday, while the least is on Saturday.
-- 📈 There is a slight positive correlation between flight duration and number of flights. This suggest the number of extra services does not really depend on flight duration. 
-- 👱 Most passengers book on the internet, and almost all passengers book round trip flights. 
+- 📉 Only 14.96% of total bookings were completed, highlighting potential for improved converion through better UX or marketing.
+- ✈️ Passengers prefer to travel between 8 am to 12 pm.
+- 📆 Mondays see the highest booking volume, while Saturdays see the least.
+- 📈 There is a very slight positive correlation between flight duration and number of flights. This suggest the number of extra services does not really depend on flight duration. 
+- 👱 Most passengers prefer booking round-trip flights through the internet(website). 
 
