@@ -1,8 +1,8 @@
-# Real Estate Analysis in The UAE using SQL and Power BI
+# Real Estate Analysis in the UAE using SQL and Power BI
 
 ## 🚀 Project Overview
 
-This project analyzes real estate listings data using SQL for data manipulation and Power BI for interactive visualizations. The goal is to derive insights into listing characteristics across different cities in the UAE, listing and price trends over time.
+This project analyzes real estate listings data from the UAE using SQL for data transformation and Power BI for interactive dashboard creation. The goal is to derive trends in apartment characteristics, pricing, and listing behavious across major cities, providing valuable insights for real estate investor and analysts.
 
 ## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project4-RealEstateAnalysis/report)
 
