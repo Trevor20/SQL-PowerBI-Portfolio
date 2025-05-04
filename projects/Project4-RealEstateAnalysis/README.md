@@ -1,10 +1,14 @@
-# Real Estate Analysis in The UAE Using SQL and Power BI
+# Real Estate Analysis in The UAE using SQL and Power BI
 
 ## 🚀 Project Overview
 
 This project analyzes real estate listings data using SQL for data manipulation and Power BI for interactive visualizations. The goal is to derive insights into listing characteristics across different cities in the UAE, listing and price trends over time.
 
 ## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project4-RealEstateAnalysis/report)
+
+## 🧠 Business Problem
+
+Real estate market in UAE is really competitive. Investors in this market wants to understand apartment listing trends and characteristics across cities in UAE in order to better target rental opportunities in the future. 
 
 ## 🎯 Objectives 
 
@@ -15,11 +19,18 @@ This project analyzes real estate listings data using SQL for data manipulation 
 
 ## 📖 Dataset
 
-The dateset in this project contains information about apartment listings in UAE. The dataset was initially collected from Kraggle, which contained imformation about listings posted on different listing sites. The dataset includes information like apartment location, date posted and characteristics of the apartment like number of bedrooms, bathrooms, furnished or unfurnished, etc
+The dateset in this project contains information about apartment listings in UAE. The dataset was collected from Kraggle, which contained imformation about listings posted on different listing sites. The dataset includes data about apartment location, date posted and apartment characteristics(bedrooms, bathrooms, furnished/unfurnished).
+
+## 🧰 Tools Used
+
+- MySQL - For data extraction, cleaning and transformation
+- Power BI - For visualization and report building
+- DAX - For creating calculated measures and KPIs
+- Data Modelling - For creating relationships between tables 
 
 ## 📁 Database
 
-To facilitate data management and analysis, a database on MySQL was created to store the dataset. MySQL provdies a robust method to organize and manipulate data. A database schema was created to improve organization and efficiency of queries. The structure allows easy integration with tools like Power BI for visualsation.
+To facilitate data management and analysis, a database on MySQL was created to store the dataset. The CSV file was imported into the database.
 
 ## 📂 Database Structure
 
@@ -42,14 +53,12 @@ The database contains 1 table
 
 ## 🔍 Key Business Questions Answered
 
-1. What time of day are apartment listings most frequently added?
-2. which days of the week see the highest number of listings?
+1. What times during the day are apartment listings most frequently added?
+2. Which days of the week see the highest number of listings?
 3. What are the average characteristics of an apartment across cities in UAE?
-4. How does price change with area?
-5. How does price change with apartment size and number of bathrooms?
-6. How do prices differ between furnished and unfurnished apartments?
-7. How do percentage of verified listings differ across apartment types?
-8. What is the distribution of total apartments across different cities in the UAE?
+4. Does price change with changes in apartment characteristics (area, bathrooms, furnished/unfurnished)?
+5. What is the distribution of verified listings across apartment types?
+6. What is the distribution of total listings across different cities in the UAE?
 
 ## ➡️ Project Approach
 
@@ -71,7 +80,7 @@ Connected Power BI to MySQL Database through Direct Query and build the followin
 ## 🏆 Final Insights
 - Only listings in Dubai and Abu Dhabi are verified, with Dubai having the majority of verfied listings.
 - Monday, start of the week, has the most listings added.
-- Most of the listings are added around morning from 7 am to 12 pm.
+- Most of the listings are added around morning between 7 am to 12 pm.
 - Area seems to increase approximately linearly with no of bedrooms.
 - Studio, 1-bedroom and 2-bedroom make up for majority of the listings.
 - In smaller apartments, the prices dont differ much between furnished and unfurnished. However, difference is noticeable for larger apartments like luxury and duplex/triplex apartments.
