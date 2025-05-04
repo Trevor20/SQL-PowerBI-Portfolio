@@ -1,4 +1,4 @@
-# Coffee Retail Sales Analysis in Saudi Arabia Using SQL and Power BI
+# Coffee Retail Sales Analysis in Saudi Arabia using SQL and Power BI
 
 ## 🚀 Project Overview
 
@@ -6,12 +6,16 @@ This project analyzes coffee retail sales data using SQL for data manipulation a
 
 ## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project5-CoffeeRetailAnalysis/reports)
 
+## 🧠 Business Problem
+
+
+
 ## 🎯 Objectives 
 
 - Analyze sales trends and identify top-performing products & stores
 - Examine the impact of discounts on net sales & profit margins
 - Evaluate customer purchasing behavior across different demographics
-- Measure store performance based on sales, employees, and management
+- Measure store performance based on sales, employees, and management.
 
 ## 📖 Dataset
 
