@@ -19,11 +19,11 @@ An Airline wants to understand customer behavior and route-level booking trends 
 
 ## 📖 Dataset
 
-The dateset represents booking-level data collected by an airline. Each row in the dataset corresponda to a single booking, which may include one or more passengers. The dataset was collected from Kraggle and contains 50k datapoints. The dataset includes information like no of passengers in the booking, type of trip, flight duration, routes, etc.
+The dataset represents booking-level data collected by an airline. Each row in the dataset corresponds to a single booking, which may include one or more passengers. The dataset was collected from Kraggle and contains 50k datapoints. The dataset includes information like no of passengers in the booking, type of trip, flight duration, routes, etc.
 
 ## 🧰 Tools Used
 
-- MySQL - Data load and intitial analysis before building dashboards
+- MySQL - Data load and initial analysis before building dashboards
 - Power BI - For building interactive dashboards
 - Power Query Editor - Data transformation using M language
 - DAX - Creating date table, calculated measures and KPI calculation
@@ -76,11 +76,11 @@ One table was created in MySQL
 1. Data load - The table was directly loaded into Power BI.
 2. Added Index column - An index column was added to check number of bookings.
 3. Split "Route" column - Split "Route" column into "Origin" and "Destination". Deleted the route column for redundancy.
-4. Added "Total extra services" - To check total no of extra services (extra baggage, preferred sead, in-flight meal) chosen in the booking.
+4. Added "Total extra services" - To check total no of extra services (extra baggage, preferred seat, in-flight meal) chosen in the booking.
 5. Rename columns - Renamed columns for better data reading for the user.
 
-### 3. Data Visualatization Using Power BI
-1. Overview - Summary of relevant KPIs like completed bookings, most popular destinations and average fligt duration.
+### 3. Data Visualization Using Power BI
+1. Overview - Summary of relevant KPIs like completed bookings, most popular destinations and average flight duration.
 2. Time-series analysis - Determines times that passengers prefer to booking flights and fly.
 3. Passenger preference - Indicates most preferred choice of booking flights and trip type.
 4. Market trends - To find top countries where majority of their customers book flights.
