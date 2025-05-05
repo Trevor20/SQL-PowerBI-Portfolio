@@ -2,23 +2,34 @@
 
 ## 🚀 Project Overview
 
-This project analyzes coffee retail sales data using SQL for data manipulation and Power BI for interactive visualizations. The goal is to derive insights into sales performance, discount impact and customer behavior.
+This project analyzes coffee retail sales data using SQL for data manipulation and Power BI for interactive visualizations. The goal is to derive insights into sales performance, discount impact and customer behavior to support business decisions.
 
 ## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project5-CoffeeRetailAnalysis/reports)
 
 ## 🧠 Business Problem
 
-A coffee retailer company in Saudi Arabia operates across five stores and offers five different coffee products. The business is looking to optimize product and store-level performance by understanding key drivers of sales and profitability. The goal is to enhance pricing, promotion, and inventory decisions to maximize revenue and customer value.
+A coffee retailer chain in Saudi Arabia operates five stores and offers five different coffee products. They want to improve sales, profitability and customer engagement. Despite steady sales, management is uncertain about:
+- Which stores and products contribute most to profitability.
+- How discounts affect overall revenue.
+- When during the day and the week get the most demand.
+The goal is to optimize pricing, promotions, and inventory strategies through data-driven insights.
 
 ## 🎯 Objectives 
 
-- Analyze sales trends and identify top-performing products & stores
-- Examine the impact of discounts on net sales & profit margins
-- Evaluate customer purchasing behavior across different demographics
+- Identify top-performing products, managers & stores.
+- Analyse sales trends over time.
+- Examine the impact of discounts on net sales & profit margins.
+- Evaluate highest spending customers for targeted marketing campaigns.
 - Measure store performance based on sales, employees, and management.
 
 ## 📖 Dataset
 
+The dataset simulates coffee retail sales in Saudi Arabia, originally sourced from Kaggle, with additional fictional customer, store, and product tables created manually to enhance analysis. Key fields include:
+- Transaction data
+- Quanntity sold
+- Gross sales, discount and net sales
+- Customer demographics
+- Product details
 The dateset in this project contains sales information of a coffe retail store in Saudi Arabia. The dataset was initially collected from Kraggle, which contained sales data and location of the stores. Additional tables like detailed product, store and customer information was created by me using fictional data and research of approx profit margin of coffee. The added information creates complexity in data analysis. The dataset includes information like transaction date, sales quantity, gross sales, discounts and net sales.
 
 ## 🧰 Tools Used
