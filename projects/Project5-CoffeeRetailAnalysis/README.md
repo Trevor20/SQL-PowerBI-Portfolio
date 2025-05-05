@@ -30,14 +30,13 @@ The dataset simulates coffee retail sales in Saudi Arabia, originally sourced fr
 - Gross sales, discount and net sales
 - Customer demographics
 - Product details
-The dateset in this project contains sales information of a coffe retail store in Saudi Arabia. The dataset was initially collected from Kraggle, which contained sales data and location of the stores. Additional tables like detailed product, store and customer information was created by me using fictional data and research of approx profit margin of coffee. The added information creates complexity in data analysis. The dataset includes information like transaction date, sales quantity, gross sales, discounts and net sales.
 
 ## 🧰 Tools Used
 
-- MySQL - For data cleaning, transformation, and modelling.
+- MySQL - For data cleaning, transformation, and star schema modelling.
 - Power BI - For building interactive dashboards and visuals.
 - DAX - For calculated columns, measures, and KPIs
-- Data Modelling - For establishing star schema relationship between tables
+- Data Modelling - Establishing star schema relationship between tables
 
 ## 📁 Database
 
@@ -45,7 +44,7 @@ To facilitate data management and analysis, a database on MySQL was created to s
 
 ## 📂 Database Structure
 
-The database contains 5 tables
+The MySQL database uses a star schema with five related tables:
 
 ### 1. City_Geoocation                
 | Column  | Description    |
@@ -97,11 +96,11 @@ The database contains 5 tables
 ## 🔍 Key Business Questions Answered
 
 1. What are the top 5 best-selling products?
-2. How do monthly sales trends change over time?
+2. How do sales trends vary monthly and daily?
 3. Which stores generate the highest revenue?
 4. What is the impact of discounts on net sales?
 5. How does customer gender influence discount usage?
-6. Which stores have the most profitable managers?
+6. Which managers outperform others in net sales?
 7. What is the customer age distribution of sales?
 8. How do gross profit and discounts correlate?
 9. Which cities contribute the most to sales volume?
@@ -110,22 +109,23 @@ The database contains 5 tables
 ## ➡️ Project Approach
 
 ### 1. Extract, Transform, Load, and Analysis using MySQL
-1. Created a SQL database and tables, and loaded data from CSV files into the database using Table Data Import Wizard. 
+1. Created a SQL database and loaded the CSV datasets using Table Data Import Wizard. 
 2. Cleaned data by addressing incorrect date formats, replaced redundant text-based values with Unique ids to initiate faster querying through relational joins.
 3. Deleted unnecessary columns to increase efficiency of data structure.
-4. Added primary and foreign keys to build a star-schema like relational design
+4. Build a star schema with primary and foreign key relationships.
 5. Conducted initial data analysis using SQL queries, including CTEs, Joins and window functions.
 
 ### 2. Data Visualatization Using Power BI
-Connected Power BI to MySQL Database through Direct Query and build the following visuals
-1. Overview - Summary of relevant KPIs like total sales, best product and best store
-2. Product analysis - Understand the distribution of demand, amount sold and gross profils accross different coffee brands
-3. Time-series analysis - graphs that show the transactions over time, allows the viewer to see peak hours/days
-4. Store analysis - To compared managers performance across stores
-5. Customer analysis - To understand most popular products and where gender had an impact on discounts and sales 
+Connected Power BI to MySQL Database via Direct Query and built the following visuals
+1. Overview - Summary of relevant KPIs like total sales, best product and best store.
+2. Product analysis - To understand demand, amount sold and gross profils accross different coffee brands.
+3. Time-series analysis - Visuals that show monthly and weekday transaction patterns.
+4. Store analysis - To compared managers performance across stores.
+5. Customer analysis - To indentify top customers and gender-wise discount analysis.
 
 ## 🏆 Final Insights
-- Monday and Friday has the most rush for coffee, probably due to the fact that those are the start and end of the work week
-- There doesnt seem to be a significant difference in net sales and profit across all stores, all stores have gross profit close to the overall average 
-- Colombian coffee is the most popular while Hail is the city with most transactions
-- Net sales increases as total discount increases. This indicates that providing discounts at the right time is beneficial to the overall sales
+- ☕ Colombian coffee is the best-selling product, and Hail is the highest performing city.
+- 📆 Sales spike on Monday and Friday, likely due to start/end of workweek.
+- 🏪 All stores perform similarly in gross profit, indicating consistent operations.
+- 📈 Discounts have a positive correlation with net sales, especially among female customers.
+- 🕵️‍♀️ Top 5 customers alone contribute significantly to total revenue, highlighting potential for loyalty programs.
