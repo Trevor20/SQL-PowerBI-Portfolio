@@ -8,7 +8,7 @@ This project analyzes coffee retail sales data using SQL for data manipulation a
 
 ## 🧠 Business Problem
 
-
+A coffee retailer company in Saudi Arabia operates across five stores and offers five different coffee products. The business is looking to optimize product and store-level performance by understanding key drivers of sales and profitability. The goal is to enhance pricing, promotion, and inventory decisions to maximize revenue and customer value.
 
 ## 🎯 Objectives 
 
@@ -21,13 +21,20 @@ This project analyzes coffee retail sales data using SQL for data manipulation a
 
 The dateset in this project contains sales information of a coffe retail store in Saudi Arabia. The dataset was initially collected from Kraggle, which contained sales data and location of the stores. Additional tables like detailed product, store and customer information was created by me using fictional data and research of approx profit margin of coffee. The added information creates complexity in data analysis. The dataset includes information like transaction date, sales quantity, gross sales, discounts and net sales.
 
+## 🧰 Tools Used
+
+- MySQL - For data cleaning, transformation, and modelling.
+- Power BI - For building interactive dashboards and visuals.
+- DAX - For calculated columns, measures, and KPIs
+- Data Modelling - For establishing star schema relationship between tables
+
 ## 📁 Database
 
-To facilitate data management and analysis, a database on MySQL was created to store the dataset. MySQL provdies a robust method to organize and manipulate data. A database schema was created to improve organization and efficiency of queries. The structure allows easy integration with tools like Power BI for visualsation.
+To facilitate data management and analysis, a database on MySQL was created to store the dataset. A database star schema was created to improve organization and efficiency of queries.
 
 ## 📂 Database Structure
 
-The final Dataset contains 5 tables
+The database contains 5 tables
 
 ### 1. City_Geoocation                
 | Column  | Description    |
