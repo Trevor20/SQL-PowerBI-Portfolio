@@ -92,7 +92,7 @@ The MySQL database contains 7 related tables:
 | Meal Plan    | 2 char code of the plan             |
 | Full Form    | Full form of the meal               |
 | Description  | Explanation of the meal plan        |
-| Average Rate | Average meal cost                   |
+| Average Rate | Average meal cost (in AED)          |
 | Type         | Hotel type (City Hotel/Resort Hotel |
 
 ### 6. dim_Room_details
@@ -123,6 +123,30 @@ The MySQL database contains 7 related tables:
 | Used_Discount | Whether Customer used discount(False/True)         |
 | Discount_Amt  | Discount amount                                    |
 | Final_Sales   | Net Sales                                          |
+| Column        | Description                                        |
+|                |                                               |
+| Date          | Date the sale occured                              | 
+| Customer_Id   | Customer Id                                        |
+| City          | Location of the store                              |
+| Category      | Type of coffee - Coffee beans is the only category |
+| Product       | Name of the coffee                                 |
+| Unit Price    | Price per cup of coffee                            |
+| Quantity      | Amount sold                                        |
+| Sales Amount  | Gross Sales                                        |
+| Used_Discount | Whether Customer used discount(False/True)         |
+| Discount_Amt  | Discount amount                                    |
+| Final_Sales   | Net Sales                                          |
+| Column        | Description                                        |
+| Date          | Date the sale occured                              | 
+| Customer_Id   | Customer Id                                        |
+| City          | Location of the store                              |
+| Category      | Type of coffee - Coffee beans is the only category |
+| Product       | Name of the coffee                                 |
+| Unit Price    | Price per cup of coffee                            |
+| Quantity      | Amount sold                                        |
+| Sales Amount  | Gross Sales                                        |
+| Used_Discount | Whether Customer used discount(False/True)         |
+| Discount_Amt  | Discount amount                                    |
 
 ## 🔍 Key Business Questions Answered
 
