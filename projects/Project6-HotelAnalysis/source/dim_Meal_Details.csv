@@ -1,0 +1,9 @@
+Meal Plan,Full Form,Description,Average Rate,Type
+SC,Self Catering,No Meals Included,0,City Hotel
+SC,Self Catering,No Meals Included,0,Resort Hotel
+BB,Bed & Breakfast,Includes Breakfast Only,70,City Hotel
+BB,Bed & Breakfast,Includes Breakfast Only,115,Resort Hotel
+HB,Half Board,Includes Breakfast and 1 main meal,150,City Hotel
+HB,Half Board,Includes Breakfast and 1 main meal,275,Resort Hotel
+FB,Full Board,"Includes Breakfast, Lunch and Dinner",250,City Hotel
+FB,Full Board,"Includes Breakfast, Lunch and Dinner",650,Resort Hotel

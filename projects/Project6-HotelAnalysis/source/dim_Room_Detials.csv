@@ -1,0 +1,13 @@
+Code,Room Category,Avg. Area (m²),Bedrooms,Bed Type,View,Wi-Fi,Balcony,Bathtub,Lounge Access
+A,Standard Room,28–32,1,Queen/Twin,City/Interior,Yes,No,No,No
+B,Deluxe Room,35–40,1,King/Queen,Partial City,Yes,Optional,Yes,No
+C,Superior Room,40–45,1,King,City/Sea View,Yes,Yes,Yes,No
+D,Executive Room,45–50,1,King,High Floor,Yes,Yes,Yes,Yes
+E,Junior Suite,55–65,1,King,City/Sea View,Yes,Yes,Yes,Yes
+F,Suite,70–90,1–2,King + SofaBed,Sea View,Yes,Yes,Yes,Yes
+G,Family Room,60–80,2,2 Queens,City/Pool View,Yes,Optional,Yes,No
+H,Accessible Room,35–45,1,Queen/Twin,Interior,Yes,No,Roll-in,No
+I,Premium View Room,45–55,1,King,Full Sea View,Yes,Yes,Yes,No
+K,Club Room,50–60,1,King,High Floor,Yes,Yes,Yes,Yes
+L,Luxury Suite,90–120,1–2,King,Sea/Marina,Yes,Yes,Yes,Yes
+P,Penthouse Suite,150–250,2–3,King + Twin,Panoramic View,Yes,Yes,Yes,Yes
