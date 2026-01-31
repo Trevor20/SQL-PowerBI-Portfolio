@@ -73,7 +73,7 @@ The MySQL database contains 7 related tables:
 | Last_name   | Agent last name                            |
 | Gender      | Agent gender                               |
 | Client_Name | Company represented                        |
-| Type        | Agent type (Corporte, GDS, TA/TO, Self-Web |
+| Type        | Agent type (Corporte, GDS, TA/TO, Self-Web)|
 | Location    | Agent country of origin                    |
 
 ### 4. dim_Hotel_details
