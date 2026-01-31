@@ -150,16 +150,15 @@ The MySQL database contains 7 related tables:
 
 ## 🔍 Key Business Questions Answered
 
-1. What are the top 5 best-selling products?
-2. How do sales trends vary monthly and daily?
-3. Which stores generate the highest revenue?
-4. What is the impact of discounts on net sales?
-5. How does customer gender influence discount usage?
-6. Which managers outperform others in net sales?
-7. What is the customer age distribution of sales?
-8. How do gross profit and discounts correlate?
-9. Which cities contribute the most to sales volume?
-10. How does product profitability vary across locations?
+## Part 1: Customer Trends & Demographics
+1. What is the distribution of customers by market segments and top origin countries?
+2. Which customer demographics contribute the most to revenue and ADR?
+3. How do high-frequency vs low-frequency customers differ in spend and ADR?
+4. Who are the top B2B client types, and how do they differ between resort and city hotels?
+5. Which customer segments deliver the most stable and operationally efficienct revenue?
+
+## Part 2: Booking Patterns & Behaviour
+1. What are the monthly booking and revenue trends across the years?
 
 ## ➡️ Project Approach
 
