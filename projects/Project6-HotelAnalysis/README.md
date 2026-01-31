@@ -157,8 +157,11 @@ The MySQL database contains 7 related tables:
 4. Who are the top B2B client types, and how do they differ between resort and city hotels?
 5. Which customer segments deliver the most stable and operationally efficienct revenue?
 
-## Part 2: Booking Patterns & Behaviour
+## Part 2: Booking Patterns & Behavior
 1. What are the monthly booking and revenue trends across the years?
+2. How do lead time, deposit type, distribution channel and booking changes affect cancellation likelihood?
+3. Which distribution channels and market segments generate the highest ADR and occupancy?
+4. Which customer types drive revenue within each booking channel?
 
 ## ➡️ Project Approach
 
