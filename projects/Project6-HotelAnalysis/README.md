@@ -48,39 +48,68 @@ To facilitate data management and analysis, a database on MySQL was created to s
 
 The MySQL database contains 7 related tables:
 
-### 1. dim_country_codes                
-| Column  | Description    |
-|---------|----------------|
-| City    | City Name      |
-| Lat     | Latitude       |
-| Long    | Longitude      | 
-
-### 2. Customer_Details
-| Column | Description          |
-|--------|----------------------|
-| Id     | Unique Customer ID   |
-| Name   | Full Name            |
-| Age    | Age                  |
-| Gender | Gender (Male/Female) |
-
-### 3. Product_Details
-| Column      | Description       |
-|-------------|-------------------|
-| Prod_Id     | Unique Product ID |
-| Product     | Name of the coffee|
-| Unit_Cost   | Cost per unit     |
-| Unit_Price  | Price per unit    | 
-
-### 4. Store_Details
+### 1. dim_Country_Codes                
 | Column  | Description              |
 |---------|--------------------------|
-| Shop_Id | Unique Shop ID           |
-| City    | Shop Location            |
-| Manager | Full Name of the manager |
-| Gender  | Gender of the manager    |
-| Age     | Age of the manager       |
+| Abbrev  | 3 character country code |
+| Country | Country name             |
+| Long    | Longitude                | 
 
-### 5. Coffee_Purchases
+### 2. dim_Customer_Details
+| Column     | Description          |
+|------------|----------------------|
+| Id         | Unique Customer ID   |
+| First_name | Customer first name  |
+| Last_name  | Customer last name   |
+| Gender     | Gender (Male/Female) |
+| Age        | Customer age         |
+| Country    | Country of origin    |
+
+### 3. dim_Agent_Company_Details
+| Column      | Description                                | 
+|-------------|--------------------------------------------|
+| Agent_id    | Unique agent ID                            |
+| First_name  | Agent first name                           |
+| Last_name   | Agent last name                            |
+| Gender      | Agent gender                               |
+| Client_Name | Company represented                        |
+| Type        | Agent type (Corporte, GDS, TA/TO, Self-Web |
+| Location    | Agent country of origin                    |
+
+### 4. dim_Hotel_details
+| Column     | Description                              | 
+|------------|------------------------------------------|
+| Hotel Name | Name of the hotel                        |
+| Location   | Hotel Location                           |
+| Stars      | Average hotel customer rating (out of 5) |
+| Rooms      | Rooms available (Assiming constant       |
+| Brand      | Company of the hotel                     |
+| Type       | Hotel type (City Hotel/Resort Hotel      |
+
+### 5. dim_Meal_details
+| Column       | Description                         | 
+|--------------|-------------------------------------|
+| Meal Plan    | 2 char code of the plan             |
+| Full Form    | Full form of the meal               |
+| Description  | Explanation of the meal plan        |
+| Average Rate | Average meal cost                   |
+| Type         | Hotel type (City Hotel/Resort Hotel |
+
+### 6. dim_Room_details
+| Column        | Description                            | 
+|---------------|----------------------------------------|
+| Code          | Room code                              |
+| Room Category | Hotel name                             |
+| Avg Area      | Area of the room                       |
+| Bedrooms      | No of bedrooms                         |
+| Bed Type      | Size of bed                            |
+| View          | Room view                              |
+| Wi-Fi         | Wi-Fi availability (Yes/No)            |
+| Balcony       | Balcony availability (Yes/No/Optional) |
+| Bathtub       | Bathtub availability (Yes/No/Roll-in)  |
+| Lounge Access | Access to lounge (Yes/No               |
+
+### 7. Fact_Hotel_bookings
 | Column        | Description                                        |
 |---------------|----------------------------------------------------|
 | Date          | Date the sale occured                              | 
