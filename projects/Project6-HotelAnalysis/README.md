@@ -162,6 +162,10 @@ The MySQL database contains 7 related tables:
 2. How do lead time, deposit type, distribution channel and booking changes affect cancellation likelihood?
 3. Which distribution channels and market segments generate the highest ADR and occupancy?
 4. Which customer types drive revenue within each booking channel?
+5. Who are the top booking agents by bookings, ADR and cancellation rate?
+
+## Part 3: Popularity, Market Positioning & Revenue Performance
+1. Which hotels consistently rank highest in revenue, ADR, and bookings?
 
 ## ➡️ Project Approach
 
