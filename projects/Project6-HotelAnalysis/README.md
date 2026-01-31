@@ -110,43 +110,43 @@ The MySQL database contains 7 related tables:
 | Lounge Access | Access to lounge (Yes/No               |
 
 ### 7. Fact_Hotel_bookings
-| Column        | Description                                        |
-|---------------|----------------------------------------------------|
-| Date          | Date the sale occured                              | 
-| Customer_Id   | Customer Id                                        |
-| City          | Location of the store                              |
-| Category      | Type of coffee - Coffee beans is the only category |
-| Product       | Name of the coffee                                 |
-| Unit Price    | Price per cup of coffee                            |
-| Quantity      | Amount sold                                        |
-| Sales Amount  | Gross Sales                                        |
-| Used_Discount | Whether Customer used discount(False/True)         |
-| Discount_Amt  | Discount amount                                    |
-| Final_Sales   | Net Sales                                          |
-| Column        | Description                                        |
-|                |                                               |
-| Date          | Date the sale occured                              | 
-| Customer_Id   | Customer Id                                        |
-| City          | Location of the store                              |
-| Category      | Type of coffee - Coffee beans is the only category |
-| Product       | Name of the coffee                                 |
-| Unit Price    | Price per cup of coffee                            |
-| Quantity      | Amount sold                                        |
-| Sales Amount  | Gross Sales                                        |
-| Used_Discount | Whether Customer used discount(False/True)         |
-| Discount_Amt  | Discount amount                                    |
-| Final_Sales   | Net Sales                                          |
-| Column        | Description                                        |
-| Date          | Date the sale occured                              | 
-| Customer_Id   | Customer Id                                        |
-| City          | Location of the store                              |
-| Category      | Type of coffee - Coffee beans is the only category |
-| Product       | Name of the coffee                                 |
-| Unit Price    | Price per cup of coffee                            |
-| Quantity      | Amount sold                                        |
-| Sales Amount  | Gross Sales                                        |
-| Used_Discount | Whether Customer used discount(False/True)         |
-| Discount_Amt  | Discount amount                                    |
+| Column                          | Description                                              |
+|---------------------------------|----------------------------------------------------------|
+| Sales_id                        | Unique booking transaction                               |
+| Customer                        | Customer Id                                              |
+| Hotel                           | Name of the hotel                                        |
+| Hotel_type                      | Type of hotel (Resort Hotel/City Hotel)                  |
+| Is_cancelled                    | Whether customer cancelled. 0 = No, 1 = Yes              |
+| Lead_time                       | Days between booking date and arrival date               |
+| arrival_date_year               | Year of arrival                                          |
+| arrival_date_month              | Month of arrival                                         |
+| arrival_date_week_number        | Week number of arrival (52-week format)                  |
+| arrival_date_day_of_month       | Day of arrival (Month based)                             |
+| stays_in_weekend_nights         | No of weekend nights stayed                              |
+| stays_in_week_night             | No of week nights stayed                                 |
+| adults                          | No of adults (18+)                                       |
+| children                        | No of children (8+)                                      |
+| babies                          | No of babies (<8)                                        |
+| meal                            | Meal chosen                                              |
+| Country                         | Customer's country of origin                             |
+| Market_segment                  | Type of hotel market (Direct, Corporate, Online TA, etc) |
+| Distribution_channel            | Touchpoint used to make the booking                      |
+| Is_repeating_guest              | Whether customer stayed before (0 = No, 1 = Yes          |
+| Previous_cancellations          | No of previous cancellations                             |
+| previous_bookings_not_cancelled | No of previous bookings not cancelled                    |
+| reserved_room_type              | Room type reserved at booking                            |
+| assigned_room_type              | Room type received at Check-in                           |
+| booking_changes                 | No of booking changes                                    |
+| deposit_type                    | Type of deposit (No Deposit, Non Refund, Refundable      |
+| agent                           | Agent id who provided the booking                        |
+| company                         | Client Name                                              |
+| days_in_waiting_list            | Days in waiting before getting a comfirmed booking       |
+| customer_type                   | Type of customer (Transient, Contract, Group)            |
+| adr                             | Average daily rate of the room                           |
+| required_car_parking_spaces     | No of parking spaces required by the customer            |
+| total_of_special_request        | No of special requests made                              |
+| reservation_status              | Reservation Status (Check-Out/Cancelled/No-Show          |
+| reservation_status_date         | Latest date the booking status was updated               |
 
 ## 🔍 Key Business Questions Answered
 
