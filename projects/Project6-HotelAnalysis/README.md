@@ -166,6 +166,10 @@ The MySQL database contains 7 related tables:
 
 ## Part 3: Popularity, Market Positioning & Revenue Performance
 1. Which hotels consistently rank highest in revenue, ADR, and bookings?
+2. How does a hotel's global revenue rank differ from its rank within each market segment?
+3. Which hotels show the highest YoY growth in ADR and completed bookings?
+4. How does top 5 hotel's revenue-based market share evolve over time?
+5. What are the top-performing room types (revenue, ADR, bookings) for each hotel segment?
 
 ## ➡️ Project Approach
 
@@ -177,12 +181,12 @@ The MySQL database contains 7 related tables:
 5. Conducted initial data analysis using SQL queries, including CTEs, Joins and window functions.
 
 ### 2. Data Visualatization Using Power BI
-Connected Power BI to MySQL Database via Direct Query and built the following visuals
-1. Overview - Summary of relevant KPIs like total sales, best product and best store.
-2. Product analysis - To understand demand, amount sold and gross profils accross different coffee brands.
-3. Time-series analysis - Visuals that show monthly and weekday transaction patterns.
-4. Store analysis - To compared managers performance across stores.
-5. Customer analysis - To indentify top customers and gender-wise discount analysis.
+Used appropiate visuals per business question, including:
+1. Line + column charts for trends.
+2. Stacked area visuals for market share.
+3. Scatter plots for cancellation drivers
+4. Ranking visuals for competitive positioning
+Visuals were focused on interpretability and decision-making, not just visually appealing. 
 
 ## 🏆 Final Insights
 - ☕ Colombian coffee is the best-selling product, and Hail is the highest performing city.
