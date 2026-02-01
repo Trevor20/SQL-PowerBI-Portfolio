@@ -201,4 +201,4 @@ This project showcases:
 1. Strong SQL proficiency for analytical problem solving.
 2. Strong and practical Power BI modeling and DAX skills.
 3. Ability to translate business questions into data-driven insights.
-4. Structured approach aligned with Business Analyst / Market Intelligence / Strategy roles.
+4. Structured approach aligned with Business Analyst/Data Analyst/Strategy roles.
