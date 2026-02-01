@@ -186,6 +186,7 @@ Used appropiate visuals per business question, including:
 2. Stacked area visuals for market share.
 3. Scatter plots for cancellation drivers
 4. Ranking visuals for competitive positioning
+
 Visuals were focused on interpretability and decision-making, not just visually appealing. 
 
 ## 🏆 Final Insights
