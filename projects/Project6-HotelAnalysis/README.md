@@ -196,3 +196,9 @@ Visuals were focused on interpretability and decision-making, not just visually 
 - 📈 Discounts have a positive correlation with net sales, especially among female customers.
 - 🕵️‍♀️ Top 5 customers alone contribute significantly to total revenue, highlighting potential for loyalty programs.
 
+## 🚀 Why This Project Matters
+This project showcases:
+1. Strong SQL proficiency for analytical problem solving.
+2. Strong and practical Power BI modeling and DAX skills.
+3. Ability to translate business questions into data-driven insights.
+4. Structured approach aligned with Business Analyst / Market Intelligence / Strategy roles.
