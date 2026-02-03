@@ -189,12 +189,18 @@ Used appropiate visuals per business question, including:
 
 Visuals were focused on interpretability and decision-making, not just visually appealing. 
 
-## 🏆 Final Insights
-- ☕ Colombian coffee is the best-selling product, and Hail is the highest performing city.
-- 📆 Sales spike on Monday and Friday, likely due to start/end of workweek.
-- 🏪 All stores perform similarly in gross profit, indicating consistent operations.
-- 📈 Discounts have a positive correlation with net sales, especially among female customers.
-- 🕵️‍♀️ Top 5 customers alone contribute significantly to total revenue, highlighting potential for loyalty programs.
+## 🏆 Final Insights and Recommendations
+- ☕ Over 60% of total booking transactions were completed, generating over 85 mil AED over 2 years, indicating healthy demand and effective booking conversion overall.
+- 🌐 Europe and UK dominate demand, but with pricing differences. Over 70% of the revenue originated from Europe and UK. However, UK customers tend to book at lower ADRs(~89 AED) compared to European customers (110+ AED), suggesting price sensitivity in the UK market and potential upsell opportunities for the European market.
+- 🔁 High-frequency customers drive almost all revenue. Customers with 20+ completed bookings contributed over 97% of total revenue, highlighting the importance of repeat customers, loyalty and partnerships.
+- 📆 There is clear seasonality in bookings and revenue. Both bookings and revenue peak around August and decline toward December, reflecting strong seasonality and the need for dynamic pricing and promotional strategies during low-demand months.
+- 🕵️‍♀️ There is heavy reliance on intermediaries. Travel Agents(TA) and Travel Operators(TO) account for over 75% of total bookings and revenue, indicating strong dependence on intermediaries and a potential opportunity to optimize direct booking channels.
+- 📈 Surprisingly, bookings requiring no deposit have the highest cancellations, while non refundable bookings have the lowest. It shows that customers folow-through better when there is a financial commitment.
+- 🏗️ The hotel market is highly competitive. The top 5 hotels maintain nearly equal market share, with minimal variation across years, suggesting a highly competitive and mature hospitality market in Dubai with limited long-term dominance.
+- 🌇 City hotels outperform on efficiency metrics compared to resort hotels across revenue, bookings and ADR. This indicates stronger utilization and more consistent demand despite resorts offering premium experiences.
+- 🛌 Standard rooms outperform luxury categories. Standard room types generate the highest performance across revenue, bookings, and ADR for both city and resort hotels, suggesting that value-driven offerings outperform luxury segmentation in overall performance.
+
+Overall, the Dubai hospitality market is highly competitive, loyalty-driven, and depends on intermediary agents. It has clear seasonality and strong customer signals tied to pricing and deposit preferences.
 
 ## 🚀 Why This Project Matters
 This project showcases:
