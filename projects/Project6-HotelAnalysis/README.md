@@ -4,7 +4,7 @@
 
 This project analyzes hotel bookings of the top 20 hotels in Dubai. The goal is to derive decision-oriented insights into customer trends, booking patterns and competitive hotel performance. The analysis combines SQL for data transformation and business logic with Power BI for interactive visual analytics.
 
-## [Report - In Progress](https://github.com/Trevor20/SQL-PowerBI-Portfolio/tree/main/projects/Project5-CoffeeRetailAnalysis/reports)
+## [Report](https://github.com/Trevor20/SQL-PowerBI-Portfolio/blob/main/projects/Project6-HotelAnalysis/reports/Part%201%20%20Customer%20Trends%20%26%20Demographics.png)
 
 ## 🧠 Business Problem
 
